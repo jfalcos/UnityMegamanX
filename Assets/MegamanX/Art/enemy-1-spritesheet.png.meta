@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: c30e6ab12d4b50347859e6480c5f0544
+timeCreated: 1438791622
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemy-1-spritesheet_0
+    21300002: enemy-1-spritesheet_1
+    21300004: enemy-1-spritesheet_2
+    21300006: enemy-1-spritesheet_3
+    21300008: enemy-1-spritesheet_4
+    21300010: enemy-1-spritesheet_5
+    21300012: enemy-1-spritesheet_6
+    21300014: enemy-1-spritesheet_7
+    21300016: enemy-1-spritesheet_8
+    21300018: enemy-1-spritesheet_9
+    21300020: enemy-1-spritesheet_10
+    21300022: enemy-1-spritesheet_11
+    21300024: enemy-1-spritesheet_12
+    21300026: enemy-1-spritesheet_13
+    21300028: enemy-1-spritesheet_14
+    21300030: enemy-1-spritesheet_15
+    21300032: enemy-1-spritesheet_16
+    21300034: enemy-1-spritesheet_17
+    21300036: enemy-1-spritesheet_18
+    21300038: enemy-1-spritesheet_19
+    21300040: enemy-1-spritesheet_20
+    21300042: enemy-1-spritesheet_21
+    21300044: enemy-1-spritesheet_22
+    21300046: enemy-1-spritesheet_23
+    21300048: enemy-1-spritesheet_24
+    21300050: enemy-1-spritesheet_25
+    21300052: enemy-1-spritesheet_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: enemy-1-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 160
+        width: 42
+        height: 57
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 160
+        width: 42
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 160
+        width: 44
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 44
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 160
+        width: 44
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 160
+        width: 44
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 159
+        width: 52
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 84
+        width: 42
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 83
+        width: 44
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 82
+        width: 44
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 82
+        width: 44
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 82
+        width: 44
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 82
+        width: 55
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 55
+        width: 16
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 57
+        width: 8
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 57
+        width: 7
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 11
+        width: 50
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 11
+        width: 44
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 9
+        width: 50
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 53
+        width: 15
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 53
+        width: 15
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 34
+        width: 15
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 34
+        width: 15
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 14
+        width: 15
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 9
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 16
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-1-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 16
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

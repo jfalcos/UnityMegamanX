@@ -12,7 +12,7 @@ public class MegamanWeapon : MonoBehaviour
 		megamanController = GetComponent<MegamanController> ();
 	}
 
-	public virtual void Fire(float chargeTime)
+	public virtual void Fire(GameObject owner, float chargeTime)
 	{
 		Debug.Log ("Fire - MegamanWeapon");
 	}

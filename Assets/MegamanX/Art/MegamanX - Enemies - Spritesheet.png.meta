@@ -1,0 +1,1518 @@
+fileFormatVersion: 2
+guid: c8dbd18f3c4575042a039b9f98f50b94
+timeCreated: 1438793929
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MegamanX - Enemies - Spritesheet_0
+    21300002: MegamanX - Enemies - Spritesheet_1
+    21300004: MegamanX - Enemies - Spritesheet_2
+    21300006: MegamanX - Enemies - Spritesheet_3
+    21300008: MegamanX - Enemies - Spritesheet_4
+    21300010: MegamanX - Enemies - Spritesheet_5
+    21300012: MegamanX - Enemies - Spritesheet_6
+    21300014: MegamanX - Enemies - Spritesheet_7
+    21300016: MegamanX - Enemies - Spritesheet_8
+    21300018: MegamanX - Enemies - Spritesheet_9
+    21300020: MegamanX - Enemies - Spritesheet_10
+    21300022: MegamanX - Enemies - Spritesheet_11
+    21300024: MegamanX - Enemies - Spritesheet_12
+    21300026: MegamanX - Enemies - Spritesheet_13
+    21300028: MegamanX - Enemies - Spritesheet_14
+    21300030: MegamanX - Enemies - Spritesheet_15
+    21300032: MegamanX - Enemies - Spritesheet_16
+    21300034: MegamanX - Enemies - Spritesheet_17
+    21300036: MegamanX - Enemies - Spritesheet_18
+    21300038: MegamanX - Enemies - Spritesheet_19
+    21300040: MegamanX - Enemies - Spritesheet_20
+    21300042: MegamanX - Enemies - Spritesheet_21
+    21300044: MegamanX - Enemies - Spritesheet_22
+    21300046: MegamanX - Enemies - Spritesheet_23
+    21300048: MegamanX - Enemies - Spritesheet_24
+    21300050: MegamanX - Enemies - Spritesheet_25
+    21300052: MegamanX - Enemies - Spritesheet_26
+    21300054: MegamanX - Enemies - Spritesheet_27
+    21300056: MegamanX - Enemies - Spritesheet_28
+    21300058: MegamanX - Enemies - Spritesheet_29
+    21300060: MegamanX - Enemies - Spritesheet_30
+    21300062: MegamanX - Enemies - Spritesheet_31
+    21300064: MegamanX - Enemies - Spritesheet_32
+    21300066: MegamanX - Enemies - Spritesheet_33
+    21300068: MegamanX - Enemies - Spritesheet_34
+    21300070: MegamanX - Enemies - Spritesheet_35
+    21300072: MegamanX - Enemies - Spritesheet_36
+    21300074: MegamanX - Enemies - Spritesheet_37
+    21300076: MegamanX - Enemies - Spritesheet_38
+    21300078: MegamanX - Enemies - Spritesheet_39
+    21300080: MegamanX - Enemies - Spritesheet_40
+    21300082: MegamanX - Enemies - Spritesheet_41
+    21300084: MegamanX - Enemies - Spritesheet_42
+    21300086: MegamanX - Enemies - Spritesheet_43
+    21300088: MegamanX - Enemies - Spritesheet_44
+    21300090: MegamanX - Enemies - Spritesheet_45
+    21300092: MegamanX - Enemies - Spritesheet_46
+    21300094: MegamanX - Enemies - Spritesheet_47
+    21300096: MegamanX - Enemies - Spritesheet_48
+    21300098: MegamanX - Enemies - Spritesheet_49
+    21300100: MegamanX - Enemies - Spritesheet_50
+    21300102: MegamanX - Enemies - Spritesheet_51
+    21300104: MegamanX - Enemies - Spritesheet_52
+    21300106: MegamanX - Enemies - Spritesheet_53
+    21300108: MegamanX - Enemies - Spritesheet_54
+    21300110: MegamanX - Enemies - Spritesheet_55
+    21300112: MegamanX - Enemies - Spritesheet_56
+    21300114: MegamanX - Enemies - Spritesheet_57
+    21300116: MegamanX - Enemies - Spritesheet_58
+    21300118: MegamanX - Enemies - Spritesheet_59
+    21300120: MegamanX - Enemies - Spritesheet_60
+    21300122: MegamanX - Enemies - Spritesheet_61
+    21300124: MegamanX - Enemies - Spritesheet_62
+    21300126: MegamanX - Enemies - Spritesheet_63
+    21300128: MegamanX - Enemies - Spritesheet_64
+    21300130: MegamanX - Enemies - Spritesheet_65
+    21300132: MegamanX - Enemies - Spritesheet_66
+    21300134: MegamanX - Enemies - Spritesheet_67
+    21300136: MegamanX - Enemies - Spritesheet_68
+    21300138: MegamanX - Enemies - Spritesheet_69
+    21300140: MegamanX - Enemies - Spritesheet_70
+    21300142: MegamanX - Enemies - Spritesheet_71
+    21300144: MegamanX - Enemies - Spritesheet_72
+    21300146: MegamanX - Enemies - Spritesheet_73
+    21300148: MegamanX - Enemies - Spritesheet_74
+    21300150: MegamanX - Enemies - Spritesheet_75
+    21300152: MegamanX - Enemies - Spritesheet_76
+    21300154: MegamanX - Enemies - Spritesheet_77
+    21300156: MegamanX - Enemies - Spritesheet_78
+    21300158: MegamanX - Enemies - Spritesheet_79
+    21300160: MegamanX - Enemies - Spritesheet_80
+    21300162: MegamanX - Enemies - Spritesheet_81
+    21300164: MegamanX - Enemies - Spritesheet_82
+    21300166: MegamanX - Enemies - Spritesheet_83
+    21300168: MegamanX - Enemies - Spritesheet_84
+    21300170: MegamanX - Enemies - Spritesheet_85
+    21300172: MegamanX - Enemies - Spritesheet_86
+    21300174: MegamanX - Enemies - Spritesheet_87
+    21300176: MegamanX - Enemies - Spritesheet_88
+    21300178: MegamanX - Enemies - Spritesheet_89
+    21300180: MegamanX - Enemies - Spritesheet_90
+    21300182: MegamanX - Enemies - Spritesheet_91
+    21300184: MegamanX - Enemies - Spritesheet_92
+    21300186: MegamanX - Enemies - Spritesheet_93
+    21300188: MegamanX - Enemies - Spritesheet_94
+    21300190: MegamanX - Enemies - Spritesheet_95
+    21300192: MegamanX - Enemies - Spritesheet_96
+    21300194: MegamanX - Enemies - Spritesheet_97
+    21300196: MegamanX - Enemies - Spritesheet_98
+    21300198: MegamanX - Enemies - Spritesheet_99
+    21300200: MegamanX - Enemies - Spritesheet_100
+    21300202: MegamanX - Enemies - Spritesheet_101
+    21300204: MegamanX - Enemies - Spritesheet_102
+    21300206: MegamanX - Enemies - Spritesheet_103
+    21300208: MegamanX - Enemies - Spritesheet_104
+    21300210: MegamanX - Enemies - Spritesheet_105
+    21300212: MegamanX - Enemies - Spritesheet_106
+    21300214: MegamanX - Enemies - Spritesheet_107
+    21300216: MegamanX - Enemies - Spritesheet_108
+    21300218: MegamanX - Enemies - Spritesheet_109
+    21300220: MegamanX - Enemies - Spritesheet_110
+    21300222: MegamanX - Enemies - Spritesheet_111
+    21300224: MegamanX - Enemies - Spritesheet_112
+    21300226: MegamanX - Enemies - Spritesheet_113
+    21300228: MegamanX - Enemies - Spritesheet_114
+    21300230: MegamanX - Enemies - Spritesheet_115
+    21300232: MegamanX - Enemies - Spritesheet_116
+    21300234: MegamanX - Enemies - Spritesheet_117
+    21300236: MegamanX - Enemies - Spritesheet_118
+    21300238: MegamanX - Enemies - Spritesheet_119
+    21300240: MegamanX - Enemies - Spritesheet_120
+    21300242: MegamanX - Enemies - Spritesheet_121
+    21300244: MegamanX - Enemies - Spritesheet_122
+    21300246: MegamanX - Enemies - Spritesheet_123
+    21300248: MegamanX - Enemies - Spritesheet_124
+    21300250: MegamanX - Enemies - Spritesheet_125
+    21300252: MegamanX - Enemies - Spritesheet_126
+    21300254: MegamanX - Enemies - Spritesheet_127
+    21300256: MegamanX - Enemies - Spritesheet_128
+    21300258: MegamanX - Enemies - Spritesheet_129
+    21300260: MegamanX - Enemies - Spritesheet_130
+    21300262: MegamanX - Enemies - Spritesheet_131
+    21300264: MegamanX - Enemies - Spritesheet_132
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MegamanX - Enemies - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1247
+        width: 35
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1246
+        width: 36
+        height: 38
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1245
+        width: 25
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1247
+        width: 35
+        height: 37
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1246
+        width: 36
+        height: 39
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1245
+        width: 25
+        height: 41
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1246
+        width: 33
+        height: 38
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1245
+        width: 36
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1244
+        width: 25
+        height: 42
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1276
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1260
+        width: 14
+        height: 10
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1243
+        width: 14
+        height: 10
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1199
+        width: 31
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1199
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1199
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1199
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1199
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1149
+        width: 31
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1149
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1149
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1149
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1149
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1099
+        width: 31
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1099
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1099
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1099
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1099
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 998
+        width: 125
+        height: 85
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 997
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 997
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 873
+        width: 125
+        height: 85
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 872
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 872
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 860
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 859
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 859
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 748
+        width: 125
+        height: 85
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 747
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 747
+        width: 111
+        height: 87
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 728
+        width: 13
+        height: 19
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 727
+        width: 13
+        height: 19
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 727
+        width: 13
+        height: 19
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 641
+        width: 111
+        height: 48
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 670
+        width: 16
+        height: 11
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 662
+        width: 7
+        height: 7
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 649
+        width: 16
+        height: 12
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 597
+        width: 68
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 597
+        width: 78
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 597
+        width: 78
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 597
+        width: 68
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 598
+        width: 56
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 612
+        width: 10
+        height: 6
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 554
+        width: 66
+        height: 23
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 555
+        width: 66
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 555
+        width: 64
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 555
+        width: 64
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 548
+        width: 57
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 487
+        width: 42
+        height: 57
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 486
+        width: 42
+        height: 58
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 489
+        width: 44
+        height: 53
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 490
+        width: 44
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 491
+        width: 44
+        height: 48
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 492
+        width: 44
+        height: 47
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 491
+        width: 52
+        height: 48
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 526
+        width: 16
+        height: 11
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 527
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 527
+        width: 7
+        height: 8
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 494
+        width: 15
+        height: 14
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 493
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 493
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 414
+        width: 50
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 417
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 414
+        width: 44
+        height: 62
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 413
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 413
+        width: 50
+        height: 64
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 347
+        width: 45
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 348
+        width: 29
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 348
+        width: 29
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 347
+        width: 30
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 347
+        width: 29
+        height: 37
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 345
+        width: 29
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 343
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 341
+        width: 29
+        height: 48
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 45
+        height: 36
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 298
+        width: 36
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 298
+        width: 30
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 321
+        width: 7
+        height: 6
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 298
+        width: 29
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 298
+        width: 27
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 298
+        width: 27
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 240
+        width: 25
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 240
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 240
+        width: 27
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 240
+        width: 33
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 240
+        width: 53
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 179
+        width: 42
+        height: 52
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 180
+        width: 30
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 180
+        width: 34
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 180
+        width: 40
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 179
+        width: 30
+        height: 52
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 97
+        width: 37
+        height: 37
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 98
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 98
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 99
+        width: 37
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 106
+        width: 37
+        height: 18
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 106
+        width: 38
+        height: 18
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 106
+        width: 34
+        height: 18
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 106
+        width: 34
+        height: 18
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 107
+        width: 38
+        height: 17
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 54
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 54
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 54
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 54
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 54
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 54
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 55
+        width: 29
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 55
+        width: 39
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 40
+        height: 19
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 6
+        width: 41
+        height: 19
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 37
+        height: 18
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 8
+        width: 40
+        height: 15
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 7
+        width: 31
+        height: 15
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 11
+        width: 13
+        height: 12
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 9
+        width: 38
+        height: 13
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 5
+        width: 40
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 20
+        width: 32
+        height: 11
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MegamanX - Enemies - Spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 18
+        height: 10
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

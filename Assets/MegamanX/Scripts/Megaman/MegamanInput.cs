@@ -28,15 +28,24 @@ public class MegamanInput : MonoBehaviour
 			{
 				timestampSet = true;
 				timestamp = Time.time;
+				megamanController.FireFX ();
 			}
 		}
 		else if(Input.GetButtonUp("Fire1"))
 		{
+			timestamp = Time.time - timestamp;
 			megamanController.Fire(timestamp);
-		}
-		else
-		{
+			timestampSet = false;
+			timestamp = 0f;
 			megamanController.StopFire();
+		}
+	}
+
+	void FixedUpdate()
+	{
+		if(Input.GetButton("Jump"))
+		{
+			megamanController.Jump();
 		}
 	}
 }
