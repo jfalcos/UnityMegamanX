@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Enemy1AttackAnimationBehaviour : StateMachineBehaviour {
@@ -13,7 +13,7 @@ public class Enemy1AttackAnimationBehaviour : StateMachineBehaviour {
 	{
 		if((stateInfo.normalizedTime % 1) >= 0.79f && (stateInfo.normalizedTime % 1) <= 0.81f)
 		{
-			Enemy1 enemy = animator.gameObject.GetComponentInParent<Enemy1>();
+			EnemyGunVolt enemy = animator.gameObject.GetComponentInParent<EnemyGunVolt>();
 			enemy.ChooseAttackTypeAndShoot();
 		}
 	}
