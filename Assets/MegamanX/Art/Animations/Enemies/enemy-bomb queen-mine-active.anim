@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: enemy-spiky-rolling
+  m_Name: enemy-bomb queen-mine-active
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,11 +18,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300210, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
+      value: {fileID: 21300020, guid: 045540bd408aabc40a7a692f852ed6ee, type: 3}
     - time: .0666666701
-      value: {fileID: 21300212, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
-    - time: .13333334
-      value: {fileID: 21300214, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
+      value: {fileID: 21300022, guid: 045540bd408aabc40a7a692f852ed6ee, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -41,13 +39,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300210, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
-    - {fileID: 21300212, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
-    - {fileID: 21300214, guid: c8dbd18f3c4575042a039b9f98f50b94, type: 3}
+    - {fileID: 21300020, guid: 045540bd408aabc40a7a692f852ed6ee, type: 3}
+    - {fileID: 21300022, guid: 045540bd408aabc40a7a692f852ed6ee, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .200000018
+    m_StopTime: .13333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

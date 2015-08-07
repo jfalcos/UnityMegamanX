@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: 7521cb1d42fb54f4da367d74cde01bc2
+timeCreated: 1438870343
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemy-ball-de-voux-spritesheet_0
+    21300002: enemy-ball-de-voux-spritesheet_1
+    21300004: enemy-ball-de-voux-spritesheet_2
+    21300006: enemy-ball-de-voux-spritesheet_3
+    21300008: enemy-ball-de-voux-spritesheet_4
+    21300010: enemy-ball-de-voux-spritesheet_5
+    21300012: enemy-ball-de-voux-spritesheet_6
+    21300014: enemy-ball-de-voux-spritesheet_7
+    21300016: enemy-ball-de-voux-spritesheet_8
+    21300018: enemy-ball-de-voux-spritesheet_9
+    21300020: enemy-ball-de-voux-spritesheet_10
+    21300022: enemy-ball-de-voux-spritesheet_11
+    21300024: enemy-ball-de-voux-spritesheet_12
+    21300026: enemy-ball-de-voux-spritesheet_13
+    21300028: enemy-ball-de-voux-spritesheet_14
+    21300030: enemy-ball-de-voux-spritesheet_15
+    21300032: enemy-ball-de-voux-spritesheet_16
+    21300034: enemy-ball-de-voux-spritesheet_17
+    21300036: enemy-ball-de-voux-spritesheet_18
+    21300038: enemy-ball-de-voux-spritesheet_19
+    21300040: enemy-ball-de-voux-spritesheet_20
+    21300042: enemy-ball-de-voux-spritesheet_21
+    21300044: enemy-ball-de-voux-spritesheet_22
+    21300046: enemy-ball-de-voux-spritesheet_23
+    21300048: enemy-ball-de-voux-spritesheet_24
+    21300050: enemy-ball-de-voux-spritesheet_25
+    21300052: enemy-ball-de-voux-spritesheet_26
+    21300054: enemy-ball-de-voux-spritesheet_27
+    21300056: enemy-ball-de-voux-spritesheet_28
+    21300058: enemy-ball-de-voux-spritesheet_29
+    21300060: enemy-ball-de-voux-spritesheet_30
+    21300062: enemy-ball-de-voux-spritesheet_31
+    21300064: enemy-ball-de-voux-spritesheet_32
+    21300066: enemy-ball-de-voux-spritesheet_33
+    21300068: enemy-ball-de-voux-spritesheet_34
+    21300070: enemy-ball-de-voux-spritesheet_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: enemy-ball-de-voux-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 142
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 141
+        width: 22
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 141
+        width: 35
+        height: 23
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 137
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 142
+        width: 32
+        height: 34
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 142
+        width: 48
+        height: 21
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 140
+        width: 58
+        height: 24
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 141
+        width: 55
+        height: 40
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 141
+        width: 55
+        height: 33
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 140
+        width: 56
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 141
+        width: 60
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 141
+        width: 62
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 141
+        width: 59
+        height: 25
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 139
+        width: 51
+        height: 35
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 136
+        width: 48
+        height: 44
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 82
+        width: 29
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 81
+        width: 27
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 80
+        width: 27
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 79
+        width: 29
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 79
+        width: 27
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 89
+        width: 21
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 89
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 89
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 88
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 91
+        width: 8
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 91
+        width: 8
+        height: 20
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 10
+        width: 25
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 8
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 6
+        width: 27
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5
+        width: 33
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 5
+        width: 53
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 4
+        width: 42
+        height: 52
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 3
+        width: 30
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 34
+        height: 49
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 40
+        height: 51
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-ball-de-voux-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 30
+        height: 50
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

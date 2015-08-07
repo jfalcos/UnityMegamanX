@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: enemy-1-attack
+  m_Name: enemy-gun volt-attack
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0

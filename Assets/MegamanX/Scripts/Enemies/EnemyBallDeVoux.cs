@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemySpiky : DamageSource
+public class EnemyBallDeVoux : DamageSource
 {
 	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
@@ -9,16 +9,12 @@ public class EnemySpiky : DamageSource
 	public float damage = 1f;
 	public float speed = 1f;
 	public bool moveLeft = true;
-
+	
 	void Awake()
 	{
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
-
-	void Start()
-	{
-	}
-
+	
 	void FixedUpdate()
 	{
 		if(moveLeft)
@@ -34,7 +30,7 @@ public class EnemySpiky : DamageSource
 		myRigidbody2D.velocity = moveVector;
 		myAnimator.SetFloat ("hSpeed", speed);
 	}
-
+	
 	void OnCollisionEnter2D(Collision2D localCollision2D)
 	{
 		if(CanCollideWith(localCollision2D.gameObject))

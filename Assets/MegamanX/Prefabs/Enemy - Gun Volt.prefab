@@ -26,10 +26,10 @@ GameObject:
   - 4: {fileID: 431672}
   - 61: {fileID: 6143420}
   - 50: {fileID: 5019244}
-  - 114: {fileID: 11461154}
   - 114: {fileID: 11451026}
+  - 114: {fileID: 11448888}
   m_Layer: 11
-  m_Name: Enemy - 1
+  m_Name: Enemy - Gun Volt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,13 +361,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67307e2620118a346982d11c21fbd862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponOwner: {fileID: 107254}
+  damageSourceOwner: {fileID: 107254}
+  collidableLayers:
+    serializedVersion: 2
+    m_Bits: 512
   damage: 1
   speed: 2
   duration: 1
-  explodableLayers:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!114 &11442376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,13 +379,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67307e2620118a346982d11c21fbd862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponOwner: {fileID: 107254}
+  damageSourceOwner: {fileID: 107254}
+  collidableLayers:
+    serializedVersion: 2
+    m_Bits: 512
   damage: 1
   speed: 2
   duration: 1
-  explodableLayers:
-    serializedVersion: 2
-    m_Bits: 512
+--- !u!114 &11448888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55e2d8c0be6bd24180ad20375bbf521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 9521050}
+  attackDelay: 1.5
+  energyBullet: {fileID: 161824}
+  rocketBullet: {fileID: 196556}
 --- !u!114 &11451026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -398,21 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
---- !u!114 &11461154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cdf191005d18324dabcc67d41f2908b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 9521050}
-  attackDelay: 2
-  energyBullet: {fileID: 161824}
-  rocketBullet: {fileID: 196556}
 --- !u!212 &21208596
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -523,7 +523,31 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: energyBullet
+      value: 
+      objectReference: {fileID: 161824}
+    - target: {fileID: 0}
+      propertyPath: rocketBullet
+      value: 
+      objectReference: {fileID: 196556}
+    - target: {fileID: 0}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9521050}
+    - target: {fileID: 0}
+      propertyPath: attackDelay
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: collidableLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: damageSourceOwner
+      value: 
+      objectReference: {fileID: 107254}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 107254}
