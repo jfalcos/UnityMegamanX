@@ -1,30 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyGunVolt : MonoBehaviour
+public class EnemyGunVolt : Enemy
 {
 	private Rigidbody2D myRigidbody2D = null;
 	private GameObject bulletInstance = null;
-	private Hitpoints hitpoints = null;
 	public Animator animator = null;
 	public float attackDelay = 1f;
 	public GameObject energyBullet = null;
 	public GameObject rocketBullet = null;
 
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake ();
 		if(animator == null)
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
-		hitpoints = GetComponent<Hitpoints> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 
 	void Start ()
 	{
 		hitpoints.onDamage = OnDamage;
-		hitpoints.onKill = OnKill;
 		InvokeRepeating ("Attack", attackDelay, attackDelay);
 	}
 
@@ -34,11 +32,6 @@ public class EnemyGunVolt : MonoBehaviour
 
 	void OnDamage(Hitpoints hitpoints)
 	{
-	}
-
-	void OnKill(Hitpoints hitpoints)
-	{
-		Destroy (gameObject);
 	}
 
 	void Attack()

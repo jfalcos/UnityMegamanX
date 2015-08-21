@@ -3,8 +3,16 @@ using System.Collections;
 
 public class MegamanGroundCheck : MonoBehaviour
 {
-	private bool _grounded = false;
+	public bool _grounded = false;
 	public LayerMask groundLayer;
+
+	void OnTriggerStay2D(Collider2D collider2D)
+	{
+		if(!_grounded)
+		{
+			OnTriggerEnter2D(collider2D);
+		}
+	}
 
 	void OnTriggerEnter2D(Collider2D collider2D)
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyBombQueen : DamageSource
+public class EnemyBombQueen : Enemy
 {
 	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
@@ -14,8 +14,9 @@ public class EnemyBombQueen : DamageSource
 	public bool canDropBomb = true;
 	private bool canStartDroppingBombs = true;
 
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 	

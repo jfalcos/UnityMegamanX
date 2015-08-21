@@ -12,9 +12,13 @@ public class WeaponBombQueenMine : MonoBehaviour
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 
+	void Start()
+	{
+	}
+
 	void OnCollisionEnter2D(Collision2D localCollider2D)
 	{
-		if(myRigidbody2D.velocity.x != 0)
+		if(!myAnimator.GetBool("armed"))
 		{
 			myAnimator.SetBool("armed", true);
 			myRigidbody2D.constraints = RigidbodyConstraints2D.FreezePosition;

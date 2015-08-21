@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6565fcb0c3e28914f83e5a9f129077b9
-timeCreated: 1438302380
+guid: fb9c9d661a0634f4b8635cbaf10514d8
+timeCreated: 1439402767
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
@@ -30,7 +30,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -49,7 +49,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
-  spritePackingTag: 
+  spritePackingTag: intro_stage_tiles
   userData: 
   assetBundleName: 
   assetBundleVariant: 

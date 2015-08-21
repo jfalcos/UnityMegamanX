@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 1c8587c980d3a414882ca64fc35e5689
+timeCreated: 1439742223
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemy-crusher_0
+    21300002: enemy-crusher_1
+    21300004: enemy-crusher_2
+    21300006: enemy-crusher_3
+    21300008: enemy-crusher_4
+    21300010: enemy-crusher_5
+    21300012: enemy-crusher_6
+    21300014: enemy-crusher_7
+    21300016: enemy-crusher_8
+    21300018: enemy-crusher_9
+    21300020: enemy-crusher_10
+    21300022: enemy-crusher_11
+    21300024: enemy-crusher_12
+    21300026: enemy-crusher_13
+    21300028: enemy-crusher_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: enemy-crusher_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 16
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 16
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 16
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 16
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 15
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 15
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 15
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 15
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 15
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 10
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 6
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemy-crusher_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

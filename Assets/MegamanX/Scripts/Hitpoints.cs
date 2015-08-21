@@ -6,8 +6,10 @@ public class Hitpoints : MonoBehaviour
 {
 	private GameObject _damageSource = null;
 	private GameObject _damageSourceOwner = null;
-	public Action<Hitpoints> onKill;
-	public Action<Hitpoints> onDamage;
+	public delegate void DelegateOnDamage(Hitpoints hitpoints);
+	public delegate void DelegateOnKill(Hitpoints hitpoints);
+	public DelegateOnDamage onDamage;
+	public DelegateOnDamage onKill;
 	public float hitpoints = 1f;
 
 	public void Damage(float amount, GameObject source, GameObject sourceOwner)

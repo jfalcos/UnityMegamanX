@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyBallDeVoux : DamageSource
+public class EnemyBallDeVoux : Enemy
 {
 	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
@@ -10,8 +10,9 @@ public class EnemyBallDeVoux : DamageSource
 	public float speed = 1f;
 	public bool moveLeft = true;
 	
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 	

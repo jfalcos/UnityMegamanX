@@ -25,10 +25,8 @@ public class MegamanController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		hitpoints.onDamage = OnDamage;
-		hitpoints.onKill = OnKill;	
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -36,6 +34,18 @@ public class MegamanController : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+	}
+	
+	void OnEnable()
+	{
+		hitpoints.onDamage += OnDamage;
+		hitpoints.onKill += OnKill;
+	}
+	
+	void OnDisable()
+	{
+		hitpoints.onDamage -= OnDamage;
+		hitpoints.onKill -= OnKill;
 	}
 
 	private void OnDamage(Hitpoints hitpoints)
