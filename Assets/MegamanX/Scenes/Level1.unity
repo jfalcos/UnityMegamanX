@@ -8679,6 +8679,14 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11410152, guid: c9c955475b370474e9500862cddfd8d6, type: 2}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410152, guid: c9c955475b370474e9500862cddfd8d6, type: 2}
+      propertyPath: proximityRadius
+      value: .200000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9c955475b370474e9500862cddfd8d6, type: 2}
   m_IsPrefabParent: 0
