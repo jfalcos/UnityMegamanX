@@ -7,15 +7,16 @@ public class MegamanController : MonoBehaviour {
 	private Hitpoints hitpoints = null;
 	private Action<GameObject, float> weapon = null;
 	private Rigidbody2D myRigidbody2D = null;
-	public Animator animator = null;
+	public Animator myAnimator = null;
 	public MegamanGroundCheck groundCheck = null;
+	public MegamanWallCheck[] wallCheck = null;
 	public float speed = 5.0f;
 	public float jumpForce = 400f;
 	public ParticleSystem chargingFX = null;
 
 	void Awake()
 	{
-		if(animator == null)
+		if(myAnimator == null)
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
@@ -50,7 +51,7 @@ public class MegamanController : MonoBehaviour {
 
 	private void OnDamage(Hitpoints hitpoints)
 	{
-		animator.SetBool ("receiveDamage", true);
+		myAnimator.SetBool ("receiveDamage", true);
 	}
 
 	private void OnKill(Hitpoints hitpoints)
@@ -82,42 +83,61 @@ public class MegamanController : MonoBehaviour {
 	{
 		RotateToDirection (axisSpeed);
 
-		if(groundCheck.grounded)
-		{
+//		if(groundCheck.grounded)
+//		{
 			myRigidbody2D.velocity = new Vector2 (axisSpeed * speed, myRigidbody2D.velocity.y);
 			if(axisSpeed == 0)
 			{
 				axisSpeed = 0.01f;
 			}
-			animator.SetFloat ("hSpeed", Mathf.Abs(axisSpeed));
-		}
+			myAnimator.SetFloat ("hSpeed", Mathf.Abs(axisSpeed));
+//		}
 	}
 
 	public void Jump()
 	{
 		if(groundCheck.grounded)
 		{
-			myRigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+			if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-jump"))
+			{
+				myAnimator.SetTrigger("jump");
+				myRigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+			}
+		}
+		else
+		{
+			foreach(MegamanWallCheck localWallCheck in wallCheck)
+			{
+				if(localWallCheck.walled)
+				{
+					myRigidbody2D.AddForce(new Vector2(0f, myRigidbody2D.velocity.y + 60f));
+					if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-wall jump"))
+					{
+						myAnimator.SetTrigger("wallJump");
+						break;
+					}
+				}
+			}
 		}
 	}
 
 	public void FireFX()
 	{
-		animator.SetBool ("charging", true);
+		myAnimator.SetBool ("charging", true);
 		chargingFX.gameObject.SetActive (true);
 	}
 
 	public void Fire(float chargeTime)
 	{
 		weapon (gameObject, chargeTime);
-		animator.SetBool ("weapon", true);
+		myAnimator.SetBool ("weapon", true);
 	}
 
 	public void StopFire()
 	{
-		animator.SetBool ("weaponFire", true);
-		animator.SetBool ("charging", false);
-		animator.SetBool ("weapon", false);
+		myAnimator.SetBool ("weaponFire", true);
+		myAnimator.SetBool ("charging", false);
+		myAnimator.SetBool ("weapon", false);
 		chargingFX.gameObject.SetActive (false);
 		Invoke ("DisableWeaponFireAnimation", 0.2f);
 	}
@@ -129,6 +149,6 @@ public class MegamanController : MonoBehaviour {
 
 	private void DisableWeaponFireAnimation()
 	{
-		animator.SetBool ("weaponFire", false);
+		myAnimator.SetBool ("weaponFire", false);
 	}
 }

@@ -7,6 +7,7 @@ public class WeaponTravelForwardExplode : DamageSource
 	public float damage = 1f;
 	public float speed = 2f;
 	public float duration = 1f;
+	public bool hitMultipleEnemies = false;
 
 	void Awake()
 	{
@@ -45,11 +46,25 @@ public class WeaponTravelForwardExplode : DamageSource
 		if(CanCollideWith(collidingObject))
 		{
 			Hitpoints collidingObjectHitpoints = collidingObject.GetComponent<Hitpoints> ();
-			if(collidingObjectHitpoints != null)
+			if(hitMultipleEnemies)
 			{
-				collidingObjectHitpoints.Damage (damage, gameObject, damageSourceOwner);
+				if(collidingObjectHitpoints != null)
+				{
+					collidingObjectHitpoints.Damage (damage, gameObject, damageSourceOwner);
+					if(damage <= collidingObjectHitpoints.hitpoints)
+					{
+						Destroy (gameObject);
+					}
+				}
 			}
-			Destroy (gameObject);
+			else
+			{
+				if(collidingObjectHitpoints != null)
+				{
+					collidingObjectHitpoints.Damage (damage, gameObject, damageSourceOwner);
+				}
+				Destroy (gameObject);
+			}
 		}
 	}
 

@@ -68,18 +68,6 @@ public class EnemyBeeBlader : Enemy
 
 	private void SpawnBallDeVoux()
 	{
-//		float chance = Random.Range (0, 1000);
-//		bool spawn = false;
-//
-//		if(chance <= 10)
-//		{
-//			spawn = true;
-//		}
-//
-//		if(spawn)
-//		{
-//			GameObject voux = Instantiate(ballDeVouxPrefab, ballDeVouxSpawnPoint.transform.position, Quaternion.identity) as GameObject;
-//		}
 		GameObject voux = Instantiate(ballDeVouxPrefab.gameObject, ballDeVouxSpawnPoint.transform.position, Quaternion.identity) as GameObject;
 		Collider2D vouxCollider2D = voux.GetComponent<Collider2D> ();
 		Physics2D.IgnoreCollision (vouxCollider2D, destroyedCollider);

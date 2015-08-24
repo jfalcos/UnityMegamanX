@@ -91,5 +91,10 @@ namespace UnityStandardAssets.Utility
         {
             DoActivateTrigger();
         }
+
+		private void OnTriggerEnter2D(Collider2D other)
+		{
+			DoActivateTrigger();
+		}
     }
 }

@@ -37,18 +37,21 @@ public class EnemyBombQueen : Enemy
 
 	void DropBomb(GameObject localGameObject, float force)
 	{
-		if(canDropBomb)
+		if(localGameObject != null)
 		{
-			canDropBomb = false;
-			MegamanController megaman = localGameObject.GetComponent<MegamanController> ();
-
-			if(megaman != null)
+			if(canDropBomb)
 			{
-				GameObject bombInstance = Instantiate(bombBullet, bombBullet.transform.position, bombBullet.transform.rotation) as GameObject;
-				Vector3 moveVector = localGameObject.transform.position - bombInstance.transform.position;
-				Rigidbody2D bombRigidbody = bombInstance.GetComponent<Rigidbody2D>();
-				bombInstance.SetActive(true);
-				bombRigidbody.AddForce(new Vector2(moveVector.x, moveVector.y) * force);
+				canDropBomb = false;
+				MegamanController megaman = localGameObject.GetComponent<MegamanController> ();
+
+				if(megaman != null)
+				{
+					GameObject bombInstance = Instantiate(bombBullet, bombBullet.transform.position, bombBullet.transform.rotation) as GameObject;
+					Vector3 moveVector = localGameObject.transform.position - bombInstance.transform.position;
+					Rigidbody2D bombRigidbody = bombInstance.GetComponent<Rigidbody2D>();
+					bombInstance.SetActive(true);
+					bombRigidbody.AddForce(new Vector2(moveVector.x, moveVector.y) * force);
+				}
 			}
 		}
 	}
@@ -86,7 +89,7 @@ public class EnemyBombQueen : Enemy
 //		myAnimator.SetFloat ("hSpeed", speed);
 	}
 	
-	void OnCollisionEnter2D(Collision2D localCollision2D)
+	void OnTriggerEnter2D(Collider2D localCollision2D)
 	{
 		if(CanCollideWith(localCollision2D.gameObject))
 		{

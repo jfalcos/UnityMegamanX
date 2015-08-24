@@ -29,7 +29,6 @@ public class PlatformEventBeeBlader : PlatformEvent
 
 	void OnKill(Hitpoints hitpoints)
 	{
-		print (hitpoints.hitpoints);
-		myRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX;
+		myRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
 	}
 }
