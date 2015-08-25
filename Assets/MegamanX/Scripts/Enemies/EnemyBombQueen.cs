@@ -5,6 +5,7 @@ public class EnemyBombQueen : Enemy
 {
 	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
+	private bool canMove = true;
 	public Animator myAnimator = null;
 	public GameObject bombBullet = null;
 	public float damage = 1f;
@@ -22,38 +23,6 @@ public class EnemyBombQueen : Enemy
 	
 	void Start()
 	{
-	}
-
-	IEnumerator StartDroppingBombs(GameObject localGameObject)
-	{
-		DropBomb (localGameObject, 150f);
-		yield return new WaitForSeconds (0.5f);
-		canDropBomb = true;
-		DropBomb (localGameObject, 100f);
-		yield return new WaitForSeconds (0.5f);
-		canDropBomb = true;
-		DropBomb (localGameObject, 50f);
-	}
-
-	void DropBomb(GameObject localGameObject, float force)
-	{
-		if(localGameObject != null)
-		{
-			if(canDropBomb)
-			{
-				canDropBomb = false;
-				MegamanController megaman = localGameObject.GetComponent<MegamanController> ();
-
-				if(megaman != null)
-				{
-					GameObject bombInstance = Instantiate(bombBullet, bombBullet.transform.position, bombBullet.transform.rotation) as GameObject;
-					Vector3 moveVector = localGameObject.transform.position - bombInstance.transform.position;
-					Rigidbody2D bombRigidbody = bombInstance.GetComponent<Rigidbody2D>();
-					bombInstance.SetActive(true);
-					bombRigidbody.AddForce(new Vector2(moveVector.x, moveVector.y) * force);
-				}
-			}
-		}
 	}
 
 	void Update()
@@ -75,18 +44,21 @@ public class EnemyBombQueen : Enemy
 
 	void FixedUpdate()
 	{
-		if(moveLeft)
+		if(canMove)
 		{
-			moveVector.x = transform.right.x * -1 * speed;
-			moveVector.y = 0f;
+			if(moveLeft)
+			{
+				moveVector.x = transform.right.x * -1 * speed;
+				moveVector.y = 0f;
+			}
+			else
+			{
+				moveVector.x = transform.right.x * speed;
+				moveVector.y = 0f;
+			}
+			myRigidbody2D.velocity = moveVector;
+	//		myAnimator.SetFloat ("hSpeed", speed);
 		}
-		else
-		{
-			moveVector.x = transform.right.x * speed;
-			moveVector.y = 0f;
-		}
-		myRigidbody2D.velocity = moveVector;
-//		myAnimator.SetFloat ("hSpeed", speed);
 	}
 	
 	void OnTriggerEnter2D(Collider2D localCollision2D)
@@ -99,6 +71,58 @@ public class EnemyBombQueen : Enemy
 				hitpoints.Damage(damage, gameObject, gameObject);
 			}
 		}
+	}
+	
+	IEnumerator StartDroppingBombs(GameObject localGameObject)
+	{
+		canMove = false;
+		DropBomb (localGameObject, 150f);
+		yield return new WaitForSeconds (0.5f);
+		canDropBomb = true;
+		DropBomb (localGameObject, 100f);
+		yield return new WaitForSeconds (0.5f);
+		canDropBomb = true;
+		DropBomb (localGameObject, 50f);
+		canMove = true;
+		StartCoroutine (FlyAway ());
+	}
+	
+	void DropBomb(GameObject localGameObject, float force)
+	{
+		if(localGameObject != null)
+		{
+			if(canDropBomb)
+			{
+				canDropBomb = false;
+				MegamanController megaman = localGameObject.GetComponent<MegamanController> ();
+				
+				if(megaman != null)
+				{
+					GameObject bombInstance = Instantiate(bombBullet, bombBullet.transform.position, bombBullet.transform.rotation) as GameObject;
+					Vector3 moveVector = localGameObject.transform.position - bombInstance.transform.position;
+					Rigidbody2D bombRigidbody = bombInstance.GetComponent<Rigidbody2D>();
+					bombInstance.SetActive(true);
+					bombRigidbody.AddForce(new Vector2(moveVector.x, moveVector.y) * force);
+				}
+			}
+		}
+	}
+
+	IEnumerator FlyAway()
+	{
+		yield return new WaitForSeconds (2f);
+		canMove = false;
+		bool reachedPosition = false;
+		Vector3 goalPosition = transform.position;
+		goalPosition.y -= 5f;
+		while(!reachedPosition)
+		{
+			Vector3 translateVector = transform.position - goalPosition;
+			transform.Translate(translateVector * speed * Time.deltaTime);
+			reachedPosition = ProximityCheck(goalPosition, 0.01f);
+			yield return new WaitForSeconds(0.03f);
+		}
+		Destroy (gameObject);
 	}
 
 	void OnDrawGizmos()
