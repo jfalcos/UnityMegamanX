@@ -32,7 +32,8 @@ public class EnemySpiky : Enemy
 			moveVector.x = transform.right.x * speed;
 			moveVector.y = 0f;
 		}
-		myRigidbody2D.velocity = moveVector;
+//		myRigidbody2D.velocity = moveVector;
+		transform.Translate (moveVector * speed * Time.deltaTime);
 		myAnimator.SetFloat ("hSpeed", speed);
 	}
 

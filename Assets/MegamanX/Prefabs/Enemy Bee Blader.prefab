@@ -63,6 +63,8 @@ GameObject:
   - 50: {fileID: 5025246}
   - 114: {fileID: 11415450}
   - 114: {fileID: 11476748}
+  - 114: {fileID: 11474186}
+  - 114: {fileID: 11413546}
   m_Layer: 11
   m_Name: Enemy Bee Blader
   m_TagString: Untagged
@@ -205,6 +207,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11413546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a6d2ad1fbdedb4f9867bcf78dbca5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballDeVouxPrefab: {fileID: 145468, guid: 93885207fe3a71b4bad852c384d91fe4, type: 2}
+  rocketPrefab: {fileID: 0}
 --- !u!114 &11415450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,6 +245,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TimeOut: .5
   m_DetachChildren: 0
+--- !u!114 &11474186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa105748c77550b438006fbaf163270a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11476748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -247,7 +273,6 @@ MonoBehaviour:
     m_Bits: 0
   onDestroyFX: {fileID: 0}
   speed: 1
-  ballDeVouxPrefab: {fileID: 11479412, guid: 93885207fe3a71b4bad852c384d91fe4, type: 2}
   ballDeVouxSpawnPoint: {fileID: 480472}
   upPositionReference: {fileID: 0}
   downPositionReference: {fileID: 0}
@@ -313,7 +338,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: ballDeVouxPrefab
+      value: 
+      objectReference: {fileID: 145468, guid: 93885207fe3a71b4bad852c384d91fe4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189162}

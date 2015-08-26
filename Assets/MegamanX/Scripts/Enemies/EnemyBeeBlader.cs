@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
+[RequireComponent (typeof(GenericWeaponManager))]
+[RequireComponent (typeof(WeaponBeeBlader))]
 public class EnemyBeeBlader : Enemy
 {
+	private GenericWeaponManager weaponManager = null;
+	private WeaponBeeBlader weaponBallDeBoux = null;
 	private bool moveUp = true;
 	private bool moveDown = false;
 	private Rigidbody2D myRigidbody2D = null;
 	private BoxCollider2D myCollider2D = null;
 	private Animator myAnimator = null;
 	public float speed = 1f;
-	public EnemyBallDeVoux ballDeVouxPrefab = null;
 	public Transform ballDeVouxSpawnPoint = null;
 	public Transform upPositionReference = null;
 	public Transform downPositionReference = null;
@@ -21,6 +25,8 @@ public class EnemyBeeBlader : Enemy
 	protected override void Awake()
 	{
 		base.Awake ();
+		weaponManager = GetComponent<GenericWeaponManager> ();
+		weaponBallDeBoux = GetComponent<WeaponBeeBlader> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 		myCollider2D = GetComponent<BoxCollider2D> ();
 		myAnimator = mySprite.gameObject.GetComponent<Animator> ();
@@ -28,13 +34,30 @@ public class EnemyBeeBlader : Enemy
 
 	void Start()
 	{
-		InvokeRepeating ("SpawnBallDeVoux", spawnTimespan, spawnTimespan);
+		InvokeRepeating ("Attack", spawnTimespan, spawnTimespan);
 	}
 
 	void Update()
 	{
 		MoveUp ();
 		MoveDown ();
+	}
+
+	private void Attack()
+	{
+		int chance = UnityEngine.Random.Range (0, 100);
+		if (chance <= 33)
+		{
+				GameObject voux = weaponBallDeBoux.SpawnBallDeVoux(ballDeVouxSpawnPoint.transform.position, Quaternion.identity);			
+			Collider2D vouxCollider2D = voux.GetComponent<Collider2D> ();
+			Physics2D.IgnoreCollision (vouxCollider2D, destroyedCollider);
+		}
+		else if(chance > 33 && chance <= 66)
+		{
+		}
+		else if(chance > 66)
+		{
+		}
 	}
 
 	private void MoveUp()
@@ -66,13 +89,6 @@ public class EnemyBeeBlader : Enemy
 		}
 	}
 
-	private void SpawnBallDeVoux()
-	{
-		GameObject voux = Instantiate(ballDeVouxPrefab.gameObject, ballDeVouxSpawnPoint.transform.position, Quaternion.identity) as GameObject;
-		Collider2D vouxCollider2D = voux.GetComponent<Collider2D> ();
-		Physics2D.IgnoreCollision (vouxCollider2D, destroyedCollider);
-	}
-
 	protected override void DestroyMe ()
 	{
 		if(onDestroyFX != null)
@@ -89,6 +105,5 @@ public class EnemyBeeBlader : Enemy
 		myRigidbody2D.gravityScale = 1f;
 		CancelInvoke ();
 		this.enabled = false;
-
 	}
 }

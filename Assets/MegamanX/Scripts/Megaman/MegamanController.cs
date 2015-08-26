@@ -2,10 +2,11 @@
 using System;
 using System.Collections;
 
+[RequireComponent (typeof(GenericWeaponManager))]
 public class MegamanController : MonoBehaviour {
 
 	private Hitpoints hitpoints = null;
-	private Action<GameObject, float> weapon = null;
+	private GenericWeaponManager weaponManager = null;
 	private Rigidbody2D myRigidbody2D = null;
 	public Animator myAnimator = null;
 	public MegamanGroundCheck groundCheck = null;
@@ -20,6 +21,7 @@ public class MegamanController : MonoBehaviour {
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
+		weaponManager = GetComponent<GenericWeaponManager> ();
 		hitpoints = GetComponent<Hitpoints> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
@@ -129,7 +131,7 @@ public class MegamanController : MonoBehaviour {
 
 	public void Fire(float chargeTime)
 	{
-		weapon (gameObject, chargeTime);
+		weaponManager.weapon (gameObject, chargeTime);
 		myAnimator.SetBool ("weapon", true);
 	}
 
@@ -144,7 +146,7 @@ public class MegamanController : MonoBehaviour {
 
 	public void SetWeapon(Action<GameObject,float> weapon)
 	{
-		this.weapon = weapon;
+		weaponManager.weapon = weapon;
 	}
 
 	private void DisableWeaponFireAnimation()
