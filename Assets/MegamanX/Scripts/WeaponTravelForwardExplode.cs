@@ -3,11 +3,13 @@ using System.Collections;
 
 public class WeaponTravelForwardExplode : DamageSource
 {
+	private Vector3 displacementVector = Vector3.zero;
 	private Rigidbody2D rigidbody2D = null;
 	public float damage = 1f;
 	public float speed = 2f;
 	public float duration = 1f;
 	public bool hitMultipleEnemies = false;
+	public bool useTranslate = false;
 
 	void Awake()
 	{
@@ -23,11 +25,29 @@ public class WeaponTravelForwardExplode : DamageSource
 	{
 		if(transform.localScale.x < 0)
 		{
-			rigidbody2D.velocity = new Vector2 (transform.right.x * -1 * speed, 0f);
+			displacementVector = new Vector2 (transform.right.x * -1 * speed, 0f);
+
+			if(!useTranslate)
+			{
+				rigidbody2D.velocity = displacementVector;
+			}
+			else
+			{
+				transform.Translate(displacementVector * Time.deltaTime);
+			}
 		}
 		else
 		{
-			rigidbody2D.velocity = new Vector2 (transform.right.x * speed, 0f);
+			displacementVector = new Vector2 (transform.right.x * speed, 0f);
+
+			if(!useTranslate)
+			{
+				rigidbody2D.velocity = displacementVector;
+			}
+			else
+			{
+				transform.Translate(displacementVector * Time.deltaTime);
+			}
 		}
 	}
 

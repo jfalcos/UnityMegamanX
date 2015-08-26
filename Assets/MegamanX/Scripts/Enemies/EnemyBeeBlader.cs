@@ -7,7 +7,7 @@ using System.Collections;
 public class EnemyBeeBlader : Enemy
 {
 	private GenericWeaponManager weaponManager = null;
-	private WeaponBeeBlader weaponBallDeBoux = null;
+	private WeaponBeeBlader weaponBeeBlader = null;
 	private bool moveUp = true;
 	private bool moveDown = false;
 	private Rigidbody2D myRigidbody2D = null;
@@ -15,9 +15,10 @@ public class EnemyBeeBlader : Enemy
 	private Animator myAnimator = null;
 	public float speed = 1f;
 	public Transform ballDeVouxSpawnPoint = null;
+	public Transform rocketSpawnPoint = null;
 	public Transform upPositionReference = null;
 	public Transform downPositionReference = null;
-	public float spawnTimespan = 1f; //seconds
+	public float attackTimespan = 1f; //seconds
 	public SpriteRenderer mySprite = null;
 	public Sprite destroyedSprite = null;
 	public PolygonCollider2D destroyedCollider = null;
@@ -26,7 +27,7 @@ public class EnemyBeeBlader : Enemy
 	{
 		base.Awake ();
 		weaponManager = GetComponent<GenericWeaponManager> ();
-		weaponBallDeBoux = GetComponent<WeaponBeeBlader> ();
+		weaponBeeBlader = GetComponent<WeaponBeeBlader> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 		myCollider2D = GetComponent<BoxCollider2D> ();
 		myAnimator = mySprite.gameObject.GetComponent<Animator> ();
@@ -34,7 +35,7 @@ public class EnemyBeeBlader : Enemy
 
 	void Start()
 	{
-		InvokeRepeating ("Attack", spawnTimespan, spawnTimespan);
+		InvokeRepeating ("Attack", attackTimespan, attackTimespan);
 	}
 
 	void Update()
@@ -46,17 +47,19 @@ public class EnemyBeeBlader : Enemy
 	private void Attack()
 	{
 		int chance = UnityEngine.Random.Range (0, 100);
-		if (chance <= 33)
+		if (chance <= 20)
 		{
-				GameObject voux = weaponBallDeBoux.SpawnBallDeVoux(ballDeVouxSpawnPoint.transform.position, Quaternion.identity);			
+			GameObject voux = weaponBeeBlader.SpawnBallDeVoux(ballDeVouxSpawnPoint.transform.position, Quaternion.identity);			
 			Collider2D vouxCollider2D = voux.GetComponent<Collider2D> ();
 			Physics2D.IgnoreCollision (vouxCollider2D, destroyedCollider);
 		}
-		else if(chance > 33 && chance <= 66)
+		else if(chance > 20 && chance <= 66)
 		{
+			GameObject rocket = weaponBeeBlader.SpawnRocket(rocketSpawnPoint.transform.position, rocketSpawnPoint.transform.rotation);
 		}
 		else if(chance > 66)
 		{
+			weaponBeeBlader.MachineGun();
 		}
 	}
 

@@ -14,6 +14,7 @@ public class Hitpoints : MonoBehaviour
 
 	public void Damage(float amount, GameObject source, GameObject sourceOwner)
 	{
+		print (gameObject + "," + amount + "," + source + "," + sourceOwner);
 		_damageSource = source;
 		_damageSourceOwner = sourceOwner;
 

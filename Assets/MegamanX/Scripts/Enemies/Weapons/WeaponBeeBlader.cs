@@ -1,31 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof(WeaponBeeBladerMachineGun))]
 public class WeaponBeeBlader : MonoBehaviour
 {
+	private WeaponBeeBladerMachineGun machineGun = null;
 	public GameObject ballDeVouxPrefab = null;
 	public GameObject rocketPrefab = null;
 
+	void Awake()
+	{
+		machineGun = GetComponent<WeaponBeeBladerMachineGun> ();
+	}
+
 	public GameObject SpawnBallDeVoux(Vector3 myPosition, Quaternion myRotation)
 	{
+		machineGun.enabled = false;
 		GameObject voux = Instantiate(ballDeVouxPrefab.gameObject, myPosition, myRotation) as GameObject;
 		return voux;
 	}
 
 	public GameObject SpawnRocket(Vector3 myPosition, Quaternion myRotation)
 	{
+		machineGun.enabled = false;
 		GameObject spawnedWeapon = Instantiate(rocketPrefab.gameObject, myPosition, myRotation) as GameObject;
 		return spawnedWeapon;
 	}
 
-	public GameObject MachineGun()
+	public void MachineGun()
 	{
-		return null;
+		machineGun.enabled = true;
 	}
-	/*
-
-		GameObject voux = Instantiate(ballDeVouxPrefab.gameObject, ballDeVouxSpawnPoint.transform.position, Quaternion.identity) as GameObject;
-		Collider2D vouxCollider2D = voux.GetComponent<Collider2D> ();
-		Physics2D.IgnoreCollision (vouxCollider2D, destroyedCollider);
-	 */
 }

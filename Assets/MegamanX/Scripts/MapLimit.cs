@@ -15,14 +15,17 @@ public class MapLimit : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D localCollider2D)
 	{
-		Hitpoints hitpoints = localCollider2D.gameObject.GetComponent<Hitpoints> ();
-		if(hitpoints != null)
+		if(!localCollider2D.gameObject.Equals(gameObject))
 		{
-			hitpoints.Damage(1000000f, gameObject, gameObject);
-		}
-		else
-		{
-			Destroy (localCollider2D.gameObject);
+			Hitpoints hitpoints = localCollider2D.gameObject.GetComponent<Hitpoints> ();
+			if(hitpoints != null)
+			{
+				hitpoints.Damage(1000000f, gameObject, gameObject);
+			}
+			else
+			{
+				Destroy (localCollider2D.gameObject);
+			}
 		}
 	}
 }

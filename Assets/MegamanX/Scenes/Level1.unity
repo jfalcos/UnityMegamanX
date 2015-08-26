@@ -242,7 +242,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26899104}
-  m_Mass: 100
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -258,7 +258,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26899104}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: -11.5347099, y: -3.02573442}
@@ -924,7 +924,7 @@ GameObject:
   - 4: {fileID: 182074313}
   - 114: {fileID: 182074315}
   - 58: {fileID: 182074314}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Bee Blader 1 Activator
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -938,7 +938,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 182074312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.5749998, y: 1.38499999, z: 0}
+  m_LocalPosition: {x: -10.6230001, y: 1.42400002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2111818733}
@@ -2173,30 +2173,6 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
   m_PrefabInternal: {fileID: 1980630088}
---- !u!114 &308258092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308258088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa105748c77550b438006fbaf163270a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &308258093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308258088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12a6d2ad1fbdedb4f9867bcf78dbca5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballDeVouxPrefab: {fileID: 145468, guid: 93885207fe3a71b4bad852c384d91fe4, type: 2}
-  rocketPrefab: {fileID: 0}
 --- !u!1 &317867121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2707,65 @@ MonoBehaviour:
   - {fileID: 2091279516}
   delayedSpawn: 1
   spawnDelay: 2
+--- !u!1 &430481252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 430481253}
+  - 114: {fileID: 430481255}
+  - 58: {fileID: 430481254}
+  m_Layer: 11
+  m_Name: Bee Blader 2 Activator
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &430481253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430481252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.36000013, y: .968999982, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1725642407}
+  m_Father: {fileID: 1713771848}
+  m_RootOrder: 27
+--- !u!58 &430481254
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430481252}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: .140000001
+--- !u!114 &430481255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430481252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8634e062924929664361c08745211fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: 2
+  target: {fileID: 1356496337}
+  source: {fileID: 0}
+  triggerCount: 1
+  repeatTrigger: 0
 --- !u!1 &435960243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,7 +2922,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 450097337}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: -11.5347099, y: -3.02573442}
@@ -4047,9 +4082,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .879670143, y: .222990751}
+  m_Offset: {x: .879670143, y: .22154355}
   serializedVersion: 2
-  m_Size: {x: 1.90480328, y: .421358168}
+  m_Size: {x: 1.90480328, y: .418463826}
 --- !u!1 &661641360
 GameObject:
   m_ObjectHideFlags: 0
@@ -8533,6 +8568,10 @@ Transform:
   - {fileID: 1437933024}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1356496337 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
+  m_PrefabInternal: {fileID: 2055120291}
 --- !u!1 &1366607641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8749,7 +8788,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437933023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.53000021, z: 0}
+  m_LocalPosition: {x: 0, y: -8.18999958, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1355177453}
@@ -10532,7 +10571,7 @@ Transform:
   - {fileID: 1929226845}
   - {fileID: 564442340}
   - {fileID: 182074313}
-  - {fileID: 1725642407}
+  - {fileID: 430481253}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1001 &1722200834
@@ -10809,7 +10848,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757776287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.1969995, y: 1.84000003, z: 0}
+  m_LocalPosition: {x: -11.6999998, y: 1.84000003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224215438}
@@ -13013,6 +13052,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -13280,6 +13320,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
+      propertyPath: m_Name
+      value: Enemy Bee Blader 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11476748, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: upPositionReference
       value: 
@@ -13288,21 +13332,7 @@ Prefab:
       propertyPath: downPositionReference
       value: 
       objectReference: {fileID: 2094561148}
-    - target: {fileID: 11476748, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: collidableLayers.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: m_Name
-      value: Enemy Bee Blader 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11474186, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-    - {fileID: 11413546, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1990684462
@@ -13575,15 +13605,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1713771848}
+    m_TransformParent: {fileID: 430481253}
     m_Modifications:
     - target: {fileID: 406736, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.6329999
+      value: 1.72700024
       objectReference: {fileID: 0}
     - target: {fileID: 406736, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.30200005
+      value: .483999997
       objectReference: {fileID: 0}
     - target: {fileID: 406736, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13607,7 +13637,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 406736, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
+      propertyPath: m_Name
+      value: Enemy Bee Blader 2
       objectReference: {fileID: 0}
     - target: {fileID: 11476748, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
       propertyPath: upPositionReference
@@ -13617,17 +13651,9 @@ Prefab:
       propertyPath: downPositionReference
       value: 
       objectReference: {fileID: 1929226845}
-    - target: {fileID: 11476748, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: collidableLayers.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 189162, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: m_Name
-      value: Enemy Bee Blader 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025246, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
-      propertyPath: m_Mass
-      value: 1
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 990ceb0da7d4b9849ab2a29b5b269c5b, type: 2}
