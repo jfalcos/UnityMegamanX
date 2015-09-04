@@ -22,15 +22,10 @@ public class EnemyGunVolt : Enemy
 
 	void Start ()
 	{
-		hitpoints.onDamage = OnDamage;
 		InvokeRepeating ("Attack", attackDelay, attackDelay);
 	}
 
 	void Update ()
-	{
-	}
-
-	void OnDamage(Hitpoints hitpoints)
 	{
 	}
 

@@ -10,13 +10,14 @@ namespace UnityStandardAssets._2D
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
+		public float yBottomPositionLimit = 0f;
 
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
-        // Use this for initialization
+		// Use this for initialization
         private void Start()
         {
             m_LastTargetPosition = target.position;

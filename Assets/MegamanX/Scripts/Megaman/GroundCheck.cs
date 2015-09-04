@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MegamanGroundCheck : MonoBehaviour
+public class GroundCheck : MonoBehaviour
 {
 	public bool _grounded = false;
 	public LayerMask groundLayer;

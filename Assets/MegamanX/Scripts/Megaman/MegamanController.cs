@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 
@@ -9,7 +9,7 @@ public class MegamanController : MonoBehaviour {
 	private GenericWeaponManager weaponManager = null;
 	private Rigidbody2D myRigidbody2D = null;
 	public Animator myAnimator = null;
-	public MegamanGroundCheck groundCheck = null;
+	public GroundCheck groundCheck = null;
 	public MegamanWallCheck[] wallCheck = null;
 	public float speed = 5.0f;
 	public float jumpForce = 400f;

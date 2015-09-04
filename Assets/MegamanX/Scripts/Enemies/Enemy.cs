@@ -12,14 +12,24 @@ public class Enemy : DamageSource
 		hitpoints = GetComponent<Hitpoints> ();
 	}
 
+	protected virtual void Start()
+	{
+	}
+
 	protected virtual void OnEnable()
 	{
+		hitpoints.onDamage += OnDamage;
 		hitpoints.onKill += OnKill;
 	}
 
 	protected virtual void OnDisable()
 	{
+		hitpoints.onDamage -= OnDamage;
 		hitpoints.onKill -= OnKill;
+	}
+
+	protected virtual void OnDamage(Hitpoints hitpoints)
+	{
 	}
 
 	protected virtual void OnKill(Hitpoints hitpoints)
