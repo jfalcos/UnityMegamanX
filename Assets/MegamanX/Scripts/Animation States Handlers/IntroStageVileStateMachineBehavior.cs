@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DeathRogumerLiftStateMachineBehavior : StateMachineBehaviour {
+public class IntroStageVileStateMachineBehavior : StateMachineBehaviour {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -14,15 +14,16 @@ public class DeathRogumerLiftStateMachineBehavior : StateMachineBehaviour {
 	//}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-	{
-		DeathRogumer deathRogumer = GameObject.FindObjectOfType<DeathRogumer> ();
-		if(!deathRogumer.deployingVile)
+	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+		if(stateInfo.IsName("enemy-vile intro stage-laugh"))
 		{
-			if(stateInfo.IsName("enemy-death rogumer-lift-deploy"))
-			{
-				deathRogumer.DeployRoadAttacker ();
-			}
+			MegamanInput playerInput = GameObject.FindObjectOfType<MegamanInput>();
+			DeathRogumer deathRogumer = GameObject.FindObjectOfType<DeathRogumer>();
+			EnemyIntroStageVile vile = GameObject.FindObjectOfType<EnemyIntroStageVile>();
+
+			playerInput.manualLock = false;
+			deathRogumer.ReadyToLeaveScene();
+			vile.readyToAttack = true;
 		}
 	}
 

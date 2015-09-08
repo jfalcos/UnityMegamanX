@@ -8,6 +8,7 @@ public class MegamanInput : MonoBehaviour
 	private MegamanController megamanController = null;
 	private float timestamp = 0f;
 	private bool timestampSet = false;
+	public bool manualLock = false;
 
 	void Awake()
 	{
@@ -20,32 +21,38 @@ public class MegamanInput : MonoBehaviour
 
 	void Update()
 	{
-		megamanController.Move (Input.GetAxis ("Horizontal"));
+		if(!manualLock)
+		{
+			megamanController.Move (Input.GetAxis ("Horizontal"));
 
-		if(Input.GetButtonDown("Fire1"))
-		{
-			if(!timestampSet)
+			if(Input.GetButtonDown("Fire1"))
 			{
-				timestampSet = true;
-				timestamp = Time.time;
-				megamanController.FireFX ();
+				if(!timestampSet)
+				{
+					timestampSet = true;
+					timestamp = Time.time;
+					megamanController.FireFX ();
+				}
 			}
-		}
-		else if(Input.GetButtonUp("Fire1"))
-		{
-			timestamp = Time.time - timestamp;
-			megamanController.Fire(timestamp);
-			timestampSet = false;
-			timestamp = 0f;
-			megamanController.StopFire();
+			else if(Input.GetButtonUp("Fire1"))
+			{
+				timestamp = Time.time - timestamp;
+				megamanController.Fire(timestamp);
+				timestampSet = false;
+				timestamp = 0f;
+				megamanController.StopFire();
+			}
 		}
 	}
 
 	void FixedUpdate()
 	{
-		if(Input.GetButton("Jump"))
+		if(!manualLock)
 		{
-			megamanController.Jump();
+			if(Input.GetButton("Jump"))
+			{
+				megamanController.Jump();
+			}
 		}
 	}
 }

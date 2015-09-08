@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 5edecb8e31a8df24f9c7124880dc981f
+timeCreated: 1441379004
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: vile-spritesheets_0
+    21300002: vile-spritesheets_1
+    21300004: vile-spritesheets_2
+    21300006: vile-spritesheets_3
+    21300008: vile-spritesheets_4
+    21300010: vile-spritesheets_5
+    21300012: vile-spritesheets_6
+    21300014: vile-spritesheets_7
+    21300016: vile-spritesheets_8
+    21300018: vile-spritesheets_9
+    21300020: vile-spritesheets_10
+    21300022: vile-spritesheets_11
+    21300024: vile-spritesheets_12
+    21300026: vile-spritesheets_13
+    21300028: vile-spritesheets_14
+    21300030: vile-spritesheets_15
+    21300032: vile-spritesheets_16
+    21300034: vile-spritesheets_17
+    21300036: vile-spritesheets_18
+    21300038: vile-spritesheets_19
+    21300040: vile-spritesheets_20
+    21300042: vile-spritesheets_21
+    21300044: vile-spritesheets_22
+    21300046: vile-spritesheets_23
+    21300048: vile-spritesheets_24
+    21300050: vile-spritesheets_25
+    21300052: vile-spritesheets_26
+    21300054: vile-spritesheets_27
+    21300056: vile-spritesheets_28
+    21300058: vile-spritesheets_29
+    21300060: vile-spritesheets_30
+    21300062: vile-spritesheets_31
+    21300064: vile-spritesheets_32
+    21300066: vile-spritesheets_33
+    21300068: vile-spritesheets_34
+    21300070: vile-spritesheets_35
+    21300072: vile-spritesheets_36
+    21300074: vile-spritesheets_37
+    21300076: vile-spritesheets_38
+    21300078: vile-spritesheets_39
+    21300080: vile-spritesheets_40
+    21300082: vile-spritesheets_41
+    21300084: vile-spritesheets_42
+    21300086: vile-spritesheets_43
+    21300088: vile-spritesheets_44
+    21300090: vile-spritesheets_45
+    21300092: vile-spritesheets_46
+    21300094: vile-spritesheets_47
+    21300096: vile-spritesheets_48
+    21300098: vile-spritesheets_49
+    21300100: vile-spritesheets_50
+    21300102: vile-spritesheets_51
+    21300104: vile-spritesheets_52
+    21300106: vile-spritesheets_53
+    21300108: vile-spritesheets_54
+    21300110: vile-spritesheets_55
+    21300112: vile-spritesheets_56
+    21300114: vile-spritesheets_57
+    21300116: vile-spritesheets_58
+    21300118: vile-spritesheets_59
+    21300120: vile-spritesheets_60
+    21300122: vile-spritesheets_61
+    21300124: vile-spritesheets_62
+    21300126: vile-spritesheets_63
+    21300128: vile-spritesheets_64
+    21300130: vile-spritesheets_65
+    21300132: vile-spritesheets_66
+    21300134: vile-spritesheets_67
+    21300136: vile-spritesheets_68
+    21300138: vile-spritesheets_69
+    21300140: vile-spritesheets_70
+    21300142: vile-spritesheets_71
+    21300144: vile-spritesheets_72
+    21300146: vile-spritesheets_73
+    21300148: vile-spritesheets_74
+    21300150: vile-spritesheets_75
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: vile-spritesheets_0
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1453
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1453
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_2
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1453
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1453
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_4
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1453
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1340
+        width: 96
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_6
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1340
+        width: 96
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_7
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1340
+        width: 96
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1230
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_9
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1213
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_10
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1212
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_11
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1212
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_12
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1212
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_13
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1215
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1216
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_15
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1218
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_16
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1202
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1202
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1177
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1086
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_21
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1086
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_22
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1086
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1086
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_24
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1089
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 962
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_26
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 964
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_27
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 962
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_28
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 963
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_29
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 964
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 854
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_32
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 854
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_34
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 857
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_35
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 856
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_36
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 856
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_37
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 745
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_38
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 744
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_39
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 746
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_40
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 740
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_41
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 739
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_42
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 617
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_43
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 613
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_44
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 614
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_45
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 614
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_46
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 613
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_47
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 427
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_48
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 428
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_49
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 430
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_50
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 430
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_51
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 430
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_52
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 349
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_53
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 349
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_54
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 349
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_55
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 349
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_56
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 344
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_57
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 269
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_58
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 269
+        width: 91
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_59
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 274
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_60
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 270
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_61
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 197
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_62
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 197
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_63
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 197
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_64
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 197
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_65
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 198
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_66
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 197
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 135
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_68
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 133
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 135
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 88
+        width: 50
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_71
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 138
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_72
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 138
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_73
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 88
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_74
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 88
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vile-spritesheets_75
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 88
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

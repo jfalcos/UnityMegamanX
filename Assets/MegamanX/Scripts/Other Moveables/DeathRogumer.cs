@@ -6,9 +6,15 @@ public class DeathRogumer : MonoBehaviour
 {
 	private MegamanController megamanController = null;
 	private DeathRogumerMovement deathRogumerMovement = null;
+	private bool _deployingVile = false;
+	private int numberOfDeployedRoadAttackers = 0;
+	private const uint roadAttackersLimitBeforeVileAppears = 4;
+	private Coroutine vilesDeployementRoutine = null;
+	public GameObject vile = null; //Reference to vile.
 	public Animator liftAnimator = null;
 	public GameObject roadAttackerPrefab = null;
-	public float liftDelay = 0f;
+	public float liftDelay = 0f; //Delay before the lift comes down and spawns a road attacker.
+	public GameObject positionMarkerForCutscene = null; //A game object, child of the main camera, with the position the death rogumer should have once Vile's cutscene starts.
 
 	void Awake()
 	{
@@ -30,6 +36,10 @@ public class DeathRogumer : MonoBehaviour
 
 	void Update()
 	{
+		if(numberOfDeployedRoadAttackers >= roadAttackersLimitBeforeVileAppears && vilesDeployementRoutine == null)
+		{
+			vilesDeployementRoutine = StartCoroutine(DeployVile());
+		}
 	}
 
 	public void EnableManualMovement()
@@ -42,9 +52,69 @@ public class DeathRogumer : MonoBehaviour
 		liftAnimator.SetTrigger ("deploy");
 	}
 
+	IEnumerator DeployVile()
+	{
+		CancelInvoke ();
+		MegamanInput playerInput = megamanController.gameObject.GetComponent<MegamanInput> ();
+		playerInput.manualLock = true;
+		deathRogumerMovement.enabled = false;
+		//Move the death rogumer to position
+		float distance = Vector3.Distance (transform.position, positionMarkerForCutscene.transform.position);
+		Vector3 translationVector = Vector3.zero;
+		while(distance > 0.002f)
+		{
+			distance = Vector3.Distance (transform.position, positionMarkerForCutscene.transform.position) % 1;
+			translationVector = positionMarkerForCutscene.transform.position - transform.position;
+			translationVector.z = 0f;
+			transform.Translate(translationVector * Time.deltaTime);
+			yield return new WaitForSeconds(0.03f);
+		}
+		_deployingVile = true;
+		vile.gameObject.SetActive (true);
+		DeployLift ();
+		yield return null;
+	}
+
 	public void DeployRoadAttacker()
 	{
-		GameObject roadAttacker = Instantiate (roadAttackerPrefab, roadAttackerPrefab.transform.position, roadAttackerPrefab.transform.rotation) as GameObject;
-		roadAttacker.SetActive (true);
+		numberOfDeployedRoadAttackers++;
+		if(numberOfDeployedRoadAttackers < roadAttackersLimitBeforeVileAppears)
+		{
+			GameObject roadAttacker = Instantiate (roadAttackerPrefab, roadAttackerPrefab.transform.position, roadAttackerPrefab.transform.rotation) as GameObject;
+			roadAttacker.SetActive (true);
+		}
+		else
+		{
+			CancelInvoke();
+		}
+	}
+
+	public void ReadyToLeaveScene()
+	{
+		StartCoroutine (LeaveScene ());
+	}
+
+	IEnumerator LeaveScene()
+	{
+		Vector3 destinationVector = new Vector3 (transform.position.x, transform.position.y + 200f, transform.position.z);
+		float distance = Vector3.Distance (transform.position, destinationVector);
+		Vector3 translationVector = Vector3.zero;
+		while(distance > 0.002f)
+		{
+			distance = Vector3.Distance (transform.position, destinationVector) % 1;
+			translationVector = destinationVector - transform.position;
+			translationVector.z = 0f;
+			transform.Translate(translationVector * Time.deltaTime);
+			yield return new WaitForSeconds(0.03f);
+		}
+		yield return null;
+	}
+
+	public bool deployingVile
+	{
+		get
+		{
+			return _deployingVile;
+		}
 	}
 }
