@@ -8,6 +8,7 @@ public class MegamanController : MonoBehaviour {
 	private Hitpoints hitpoints = null;
 	private GenericWeaponManager weaponManager = null;
 	private Rigidbody2D myRigidbody2D = null;
+	private Collider2D _myCollider2D = null;
 	public Animator myAnimator = null;
 	public GroundCheck groundCheck = null;
 	public MegamanWallCheck[] wallCheck = null;
@@ -24,13 +25,13 @@ public class MegamanController : MonoBehaviour {
 		weaponManager = GetComponent<GenericWeaponManager> ();
 		hitpoints = GetComponent<Hitpoints> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
+		_myCollider2D = GetComponent<Collider2D> ();
 	}
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 	}
 
-	// Update is called once per frame
 	void Update ()
 	{
 	}
@@ -149,8 +150,54 @@ public class MegamanController : MonoBehaviour {
 		weaponManager.weapon = weapon;
 	}
 
+	public void CaptureBy(GameObject localGameObject)
+	{
+		myRigidbody2D.gravityScale = 0f;
+		MegamanInput playerInput = GameObject.FindObjectOfType<MegamanInput> ();
+		playerInput.enabled = false;
+		myAnimator.SetFloat ("hSpeed", 0f);
+		myAnimator.SetBool ("charging", false);
+		myAnimator.SetBool ("receiveDamage", false);
+		chargingFX.gameObject.SetActive (false);
+		StopFire ();
+		DisableWeaponFireAnimation ();
+		myAnimator.SetBool ("capturedHurt", true);
+		myAnimator.SetTrigger ("capture");
+	}
+
+	public void OnGrabbedByEnemy(Vector3 grabPosition)
+	{
+		transform.position = grabPosition;
+		myAnimator.SetBool ("capturedHurt", false);
+		myAnimator.SetTrigger ("grabbed");
+	}
+
 	private void DisableWeaponFireAnimation()
 	{
 		myAnimator.SetBool ("weaponFire", false);
+	}
+
+	public float health
+	{
+		get
+		{
+			return hitpoints.hitpoints;
+		}
+	}
+
+	public float healthInPercentage
+	{
+		get
+		{
+			return hitpoints.GetRemainingHealthPercentage();
+		}
+	}
+
+	public Collider2D myCollider2D
+	{
+		get
+		{
+			return _myCollider2D;
+		}
 	}
 }

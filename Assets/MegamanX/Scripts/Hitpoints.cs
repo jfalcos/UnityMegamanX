@@ -6,11 +6,17 @@ public class Hitpoints : MonoBehaviour
 {
 	private GameObject _damageSource = null;
 	private GameObject _damageSourceOwner = null;
+	private float startingHitpoints = 0f;
 	public delegate void DelegateOnDamage(Hitpoints hitpoints);
 	public delegate void DelegateOnKill(Hitpoints hitpoints);
 	public DelegateOnDamage onDamage;
 	public DelegateOnDamage onKill;
 	public float hitpoints = 1f;
+
+	void Start()
+	{
+		startingHitpoints = hitpoints;
+	}
 
 	public void Damage(float amount, GameObject source, GameObject sourceOwner)
 	{
@@ -53,5 +59,10 @@ public class Hitpoints : MonoBehaviour
 		{
 			return _damageSourceOwner;
 		}
+	}
+
+	public float GetRemainingHealthPercentage()
+	{
+		return (hitpoints * 100) / startingHitpoints;
 	}
 }

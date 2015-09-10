@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5edecb8e31a8df24f9c7124880dc981f
-timeCreated: 1441379004
+timeCreated: 1441744181
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -113,6 +113,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -182,8 +183,8 @@ TextureImporter:
         y: 1340
         width: 96
         height: 86
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 5
+      pivot: {x: 1, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: vile-spritesheets_6
       rect:
@@ -192,8 +193,8 @@ TextureImporter:
         y: 1340
         width: 96
         height: 86
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 5
+      pivot: {x: 1, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: vile-spritesheets_7
       rect:
@@ -202,8 +203,8 @@ TextureImporter:
         y: 1340
         width: 96
         height: 86
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 5
+      pivot: {x: 1, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: vile-spritesheets_8
       rect:

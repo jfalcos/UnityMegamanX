@@ -1,38 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyIntroStageVile : MonoBehaviour
+public class EnemyIntroStageVile : Enemy
 {
 	private MegamanController megamanController = null;
 	private Rigidbody2D myRigidbody2D = null;
-	public bool jumping = false;
-	public bool moving = false;
-	private Collider2D myCollider2D = null;
+	private bool jumping = false;
+	private bool moving = false;
+	private bool damageLock = false;
+	private bool walkToMegaman = false;
+	private GameObject energyBallInstance = null;
+	public Collider2D myCollider2D = null;
+	public Collider2D myTriggerCollider2D = null;
 	public Animator myAnimator = null;
+	public GameObject vilesEnergyBall = null;
+	public Transform energyBallSpawnMarker = null;
+	public Transform handGrabPositionMarker = null;
 	public GroundCheck groundCheck = null;
 	public Collider2D deathRogumersLiftCollder = null;
+	public float damage = 1f;
+	public float constantDamageDelay = 0.5f;
 	public float walkSpeed = 1f;
 	public float slideSpeed = 2f;
-	public float jumpForce = 50f;
+	public Vector2 jumpForce = new Vector2 (25f, 50f);
 	public float attackDistance = 1f;
 	public float walkDistance = 2f;
 	public float slideDistance = 4f;
 	public bool readyToAttack = false;
 
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake ();
 		megamanController = GameObject.FindObjectOfType<MegamanController> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
-		myCollider2D = GetComponent<Collider2D> ();
 	}
 
-	void Start()
+	protected override void Start()
 	{
+		base.Start ();
+		Physics2D.IgnoreCollision (myCollider2D, megamanController.myCollider2D);
 		StartCoroutine (LiftJump ());
 	}
 
 	void Update()
 	{
+		RotateToMegaman ();
+
 		if(readyToAttack)
 		{
 			float distance = Vector3.Distance (transform.position, megamanController.transform.position);
@@ -40,12 +53,12 @@ public class EnemyIntroStageVile : MonoBehaviour
 			if(distance >= walkDistance && distance < slideDistance && !moving)
 			{
 				moving = true;
-				StartCoroutine(WalkTowardsTarget(megamanController.transform.position));
+				WalkTowardsTarget(megamanController.transform.position);
 			}
 			else if(distance >= slideDistance && !moving)
 			{
 				moving = true;
-				StartCoroutine(SlideTowardsTarget(megamanController.transform.position));
+				SlideTowardsTarget(megamanController.transform.position);
 			}
 
 			if(distance <= attackDistance)
@@ -54,6 +67,23 @@ public class EnemyIntroStageVile : MonoBehaviour
 				{
 					Invoke("Attack", 1f);
 				}
+			}
+
+			if(!groundCheck.grounded && megamanController.healthInPercentage < 25)
+			{
+				ShootEnergyBall();
+			}
+		}
+
+		if(walkToMegaman)
+		{
+			WalkTowardsTarget(megamanController.transform.position + Vector3.right * 0.5f);
+			print(Vector3.Distance(megamanController.transform.position + Vector3.right * 0.5f, transform.position) + " && " + ((megamanController.transform.position.x - transform.position.x) < 0) + " (" + (megamanController.transform.position.x - transform.position.x + ")"));
+			if(ProximityCheck(megamanController.transform.position + Vector3.right * 0.5f, 0.25f) && ((megamanController.transform.position.x - transform.position.x) < 0))
+			{
+				walkToMegaman = false;
+				myAnimator.SetTrigger ("grabMegaman");
+				megamanController.OnGrabbedByEnemy (handGrabPositionMarker.position);
 			}
 		}
 	}
@@ -66,19 +96,37 @@ public class EnemyIntroStageVile : MonoBehaviour
 		}
 	}
 
+	void OnTriggerEnter2D(Collider2D localCollider2D)
+	{
+		if(!damageLock)
+		{
+			if(CanCollideWith(localCollider2D.gameObject))
+			{
+				Hitpoints hitpoints = megamanController.gameObject.GetComponent<Hitpoints>();
+				hitpoints.Damage(damage, gameObject, gameObject);
+				damageLock = true;
+			}
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D localCollider2D)
+	{
+		OnTriggerEnter2D (localCollider2D);
+	}
+
 	IEnumerator LiftJump()
 	{
 		yield return new WaitForSeconds (1f);
 		transform.SetParent (null);
 		Physics2D.IgnoreCollision (myCollider2D, deathRogumersLiftCollder);
-		Jump ();
+		IntroJump ();
 	}
 
-	public void Jump()
+	public void IntroJump()
 	{
 		if(groundCheck.grounded)
 		{
-			myRigidbody2D.AddForce(new Vector2(0, jumpForce));
+			myRigidbody2D.AddForce(new Vector2(0, jumpForce.y));
 			jumping = true;
 			SetIdleAnimation (false);
 			SetWalkAnimation (false);
@@ -87,8 +135,52 @@ public class EnemyIntroStageVile : MonoBehaviour
 		}
 	}
 
-	public void JumpBackwards()
+	public void JumpUp()
 	{
+		if(groundCheck.grounded)
+		{
+			myRigidbody2D.AddForce(new Vector2(0, jumpForce.y));
+			jumping = true;
+			SetIdleAnimation (false);
+			SetWalkAnimation (false);
+			myAnimator.SetTrigger ("jump");
+		}
+	}
+
+	public void JumpForward(Vector3 toTarget)
+	{
+		if(groundCheck.grounded)
+		{
+			Vector3 directionVector = toTarget - transform.position; //My front
+			directionVector.x = Mathf.Clamp(directionVector.x, -1, 1);
+			myRigidbody2D.AddForce(new Vector2(directionVector.x * jumpForce.x, jumpForce.y));
+			jumping = true;
+			SetIdleAnimation (false);
+			SetWalkAnimation (false);
+			myAnimator.SetTrigger ("jump");
+		}
+	}
+
+	public void JumpBackwards(Vector3 fromTarget)
+	{
+		if(groundCheck.grounded)
+		{
+			Vector3 directionVector = fromTarget + transform.position; //My back
+			directionVector.x = Mathf.Clamp(directionVector.x, -1, 1);
+			myRigidbody2D.AddForce(new Vector2(directionVector.x * jumpForce.x, jumpForce.y));
+			jumping = true;
+			SetIdleAnimation (false);
+			SetWalkAnimation (false);
+			myAnimator.SetTrigger ("jump");
+		}
+	}
+
+	void ShootEnergyBall()
+	{
+		if(energyBallInstance == null)
+		{
+			energyBallInstance = Instantiate (vilesEnergyBall, energyBallSpawnMarker.position, Quaternion.identity) as GameObject;
+		}
 	}
 
 	public void Land()
@@ -99,18 +191,89 @@ public class EnemyIntroStageVile : MonoBehaviour
 		myAnimator.SetTrigger ("land");
 	}
 
-	IEnumerator WalkTowardsTarget(Vector3 targetPosition)
+	void WalkTowardsTarget(Vector3 targetPosition)
 	{
-		print ("WalkTowardsTarget");
 		SetIdleAnimation (false);
 		SetWalkAnimation (true);
 
-		float distance = Vector3.Distance (transform.position, targetPosition);
 		Vector3 translationVector = Vector3.zero;
-		while(distance > walkDistance)
+		translationVector = targetPosition - transform.position;
+		translationVector.z = 0f;
+		transform.Translate(translationVector * walkSpeed * Time.deltaTime);
+		moving = false;
+	}
+	
+	void SlideTowardsTarget(Vector3 targetPosition)
+	{
+		SetIdleAnimation (false);
+		SetWalkAnimation (false);
+
+		Vector3 translationVector = Vector3.zero;
+		translationVector = targetPosition - transform.position;
+		translationVector.z = 0f;
+		transform.Translate(translationVector * slideSpeed * Time.deltaTime);
+		moving = false;
+	}
+
+	public void Attack()
+	{
+		int attackChoice = Random.Range (0, 100);
+
+		if(megamanController.healthInPercentage < 25)
 		{
-			Debug.Log("Walking Towards Target - Distance = " + distance);
-			distance = Vector3.Distance (transform.position, targetPosition) % 1;
+			//Same moves as everything below the else{} statement except for the PuncAttack().
+			if(attackChoice < 33)
+			{
+				JumpForward(megamanController.transform.position);
+			}
+			else if(attackChoice >= 33 && attackChoice < 66)
+			{
+				JumpUp();
+			}
+			else if(attackChoice >= 66 && attackChoice < 100)
+			{
+				JumpBackwards(megamanController.transform.position);
+			}
+		}
+		else
+		{
+			if(attackChoice < 25)
+			{
+				JumpForward(megamanController.transform.position);
+			}
+			else if(attackChoice >= 25 && attackChoice < 50)
+			{
+				JumpUp();
+			}
+			else if(attackChoice >= 50 && attackChoice < 75)
+			{
+				JumpBackwards(megamanController.transform.position);
+			}
+			else if(attackChoice >= 75 && attackChoice <= 100)
+			{
+				PunchAttack();
+			}
+
+			damageLock = !damageLock;
+		}
+	}
+
+	void PunchAttack()
+	{
+		myAnimator.SetTrigger ("attack");
+	}
+
+	IEnumerator WalkAttack()
+	{
+		Vector3 targetPosition = megamanController.transform.position + (megamanController.transform.position - transform.position) / 2f;
+		SetIdleAnimation (false);
+		SetWalkAnimation (true);
+
+		while(!ProximityCheck(targetPosition, 0.6f))
+		{
+			print("Proximity Check: " + (Mathf.Abs (Vector3.Distance (transform.position, targetPosition)) <= 0.6f));
+			print("Distance: " + Mathf.Abs (Vector3.Distance (transform.position, targetPosition)));
+			Vector3 translationVector = Vector3.zero;
 			translationVector = targetPosition - transform.position;
 			translationVector.z = 0f;
 			transform.Translate(translationVector * walkSpeed * Time.deltaTime);
@@ -118,34 +281,6 @@ public class EnemyIntroStageVile : MonoBehaviour
 		}
 		moving = false;
 		yield return null;
-	}
-	
-	IEnumerator SlideTowardsTarget(Vector3 targetPosition)
-	{
-		print ("SlideTowardsTarget");
-		SetIdleAnimation (false);
-		SetWalkAnimation (false);
-		
-		float distance = Vector3.Distance (transform.position, targetPosition);
-		Vector3 translationVector = Vector3.zero;
-		while(distance > slideDistance)
-		{
-			Debug.Log("Sliding Towards Target - Distance = " + distance);
-			distance = Vector3.Distance (transform.position, targetPosition) % 1;
-			translationVector = targetPosition - transform.position;
-			translationVector.z = 0f;
-			transform.Translate(translationVector * slideSpeed * Time.deltaTime);
-			yield return new WaitForSeconds(0.03f);
-		}
-		moving = false;
-		yield return null;
-	}
-
-	public void Attack()
-	{
-		SetIdleAnimation (false);
-		SetWalkAnimation (false);
-		myAnimator.SetTrigger ("attack");
 	}
 
 	public void Laugh()
@@ -163,6 +298,44 @@ public class EnemyIntroStageVile : MonoBehaviour
 	void SetWalkAnimation(bool enabled)
 	{
 		myAnimator.SetBool ("walk", enabled);
+	}
+
+	private void RotateToMegaman()
+	{
+		Vector3 myScale = transform.localScale;
+		Vector3 directionVector = megamanController.transform.position - transform.position;
+
+		if(directionVector.x < 0 )
+		{
+			if(myScale.x < 0)
+			{
+				myScale.x *= -1;
+			}
+		}
+		else if(directionVector.x > 0)
+		{
+			if(myScale.x > 0)
+			{
+				if(myScale.x > 0)
+				{
+					myScale.x *= -1;
+				}
+			}
+		}
+
+		transform.localScale = myScale;
+	}
+
+	void DamageUnlock()
+	{
+		damageLock = false;
+	}
+
+	public void OnCaptureMegaman()
+	{
+		readyToAttack = false;
+		CancelInvoke ();
+		walkToMegaman = true;
 	}
 
 	void OnDrawGizmos()

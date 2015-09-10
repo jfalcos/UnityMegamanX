@@ -15,6 +15,7 @@ public class DeathRogumer : MonoBehaviour
 	public GameObject roadAttackerPrefab = null;
 	public float liftDelay = 0f; //Delay before the lift comes down and spawns a road attacker.
 	public GameObject positionMarkerForCutscene = null; //A game object, child of the main camera, with the position the death rogumer should have once Vile's cutscene starts.
+	public bool deployVile = false;
 
 	void Awake()
 	{
@@ -36,6 +37,12 @@ public class DeathRogumer : MonoBehaviour
 
 	void Update()
 	{
+		if(deployVile)
+		{
+			deployVile = false;
+			StartCoroutine(DeployVile());
+		}
+
 		if(numberOfDeployedRoadAttackers >= roadAttackersLimitBeforeVileAppears && vilesDeployementRoutine == null)
 		{
 			vilesDeployementRoutine = StartCoroutine(DeployVile());
