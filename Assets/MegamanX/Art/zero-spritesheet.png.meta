@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: 9a62eb66e405cd74491d387e643c9240
+timeCreated: 1441856275
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zero-spritesheet_0
+    21300002: zero-spritesheet_1
+    21300004: zero-spritesheet_2
+    21300006: zero-spritesheet_3
+    21300008: zero-spritesheet_4
+    21300010: zero-spritesheet_5
+    21300012: zero-spritesheet_6
+    21300014: zero-spritesheet_7
+    21300016: zero-spritesheet_8
+    21300018: zero-spritesheet_9
+    21300020: zero-spritesheet_10
+    21300022: zero-spritesheet_11
+    21300024: zero-spritesheet_12
+    21300026: zero-spritesheet_13
+    21300028: zero-spritesheet_14
+    21300030: zero-spritesheet_15
+    21300032: zero-spritesheet_16
+    21300034: zero-spritesheet_18
+    21300036: zero-spritesheet_19
+    21300038: zero-spritesheet_20
+    21300040: zero-spritesheet_21
+    21300042: zero-spritesheet_22
+    21300044: zero-spritesheet_23
+    21300046: zero-spritesheet_24
+    21300048: zero-spritesheet_25
+    21300050: zero-spritesheet_26
+    21300052: zero-spritesheet_27
+    21300054: zero-spritesheet_28
+    21300056: zero-spritesheet_29
+    21300058: zero-spritesheet_30
+    21300060: zero-spritesheet_31
+    21300062: zero-spritesheet_32
+    21300064: zero-spritesheet_33
+    21300066: zero-spritesheet_34
+    21300068: zero-spritesheet_35
+    21300070: zero-spritesheet_36
+    21300072: zero-spritesheet_37
+    21300074: zero-spritesheet_38
+    21300076: zero-spritesheet_39
+    21300078: zero-spritesheet_40
+    21300080: zero-spritesheet_41
+    21300082: zero-spritesheet_42
+    21300084: zero-spritesheet_43
+    21300086: zero-spritesheet_44
+    21300088: zero-spritesheet_45
+    21300090: zero-spritesheet_46
+    21300092: zero-spritesheet_47
+    21300094: zero-spritesheet_48
+    21300096: zero-spritesheet_49
+    21300098: zero-spritesheet_51
+    21300100: zero-spritesheet_54
+    21300102: zero-spritesheet_50
+    21300104: zero-spritesheet_52
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: zero-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 508
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 460
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 460
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 460
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 460
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 460
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 461
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 410
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 410
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 410
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 410
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 426
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 408
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 354
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 389
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 382
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 354
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 376
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 362
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 351
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 351
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 306
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 341
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 341
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 341
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 306
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 306
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 306
+        width: 40
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 261
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 261
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 260
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 260
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 213
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 213
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 213
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 211
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 115
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 118
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 106
+        width: 60
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 29
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 102
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 105
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 28
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 103
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zero-spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 29
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,6 +11,7 @@ public class DeathRogumer : MonoBehaviour
 	private const uint roadAttackersLimitBeforeVileAppears = 4;
 	private Coroutine vilesDeployementRoutine = null;
 	public GameObject vile = null; //Reference to vile.
+	public Animator myAnimator = null;
 	public Animator liftAnimator = null;
 	public GameObject roadAttackerPrefab = null;
 	public float liftDelay = 0f; //Delay before the lift comes down and spawns a road attacker.
@@ -53,8 +54,14 @@ public class DeathRogumer : MonoBehaviour
 	{
 		deathRogumerMovement.enabled = true;
 	}
+	
+	public void Deploy()
+	{
+		deathRogumerMovement.enabled = false;
+		myAnimator.SetTrigger ("deploy");
+	}
 
-	void DeployLift()
+	public void DeployLift()
 	{
 		liftAnimator.SetTrigger ("deploy");
 	}
@@ -103,16 +110,16 @@ public class DeathRogumer : MonoBehaviour
 
 	IEnumerator LeaveScene()
 	{
-		Vector3 destinationVector = new Vector3 (transform.position.x, transform.position.y + 200f, transform.position.z);
+		Vector3 destinationVector = new Vector3 (transform.position.x, 2.9f, transform.position.z);
 		float distance = Vector3.Distance (transform.position, destinationVector);
 		Vector3 translationVector = Vector3.zero;
-		while(distance > 0.002f)
+		while(distance > 0.2f)
 		{
-			distance = Vector3.Distance (transform.position, destinationVector) % 1;
+			distance = Vector3.Distance (transform.position, destinationVector);
 			translationVector = destinationVector - transform.position;
 			translationVector.z = 0f;
 			transform.Translate(translationVector * Time.deltaTime);
-			yield return new WaitForSeconds(0.03f);
+			yield return new WaitForSeconds(Time.deltaTime);
 		}
 		yield return null;
 	}

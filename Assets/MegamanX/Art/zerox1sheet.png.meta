@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: 497fd146f212919448b99d63420cf0ab
+timeCreated: 1441932271
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zerox1sheet_0
+    21300002: zerox1sheet_1
+    21300004: zerox1sheet_2
+    21300006: zerox1sheet_3
+    21300008: zerox1sheet_4
+    21300010: zerox1sheet_5
+    21300012: zerox1sheet_6
+    21300014: zerox1sheet_7
+    21300016: zerox1sheet_8
+    21300018: zerox1sheet_9
+    21300020: zerox1sheet_10
+    21300022: zerox1sheet_11
+    21300024: zerox1sheet_12
+    21300026: zerox1sheet_13
+    21300028: zerox1sheet_14
+    21300030: zerox1sheet_15
+    21300032: zerox1sheet_16
+    21300034: zerox1sheet_17
+    21300036: zerox1sheet_19
+    21300038: zerox1sheet_20
+    21300040: zerox1sheet_21
+    21300042: zerox1sheet_22
+    21300044: zerox1sheet_23
+    21300046: zerox1sheet_24
+    21300048: zerox1sheet_25
+    21300050: zerox1sheet_26
+    21300052: zerox1sheet_27
+    21300054: zerox1sheet_28
+    21300056: zerox1sheet_29
+    21300058: zerox1sheet_30
+    21300060: zerox1sheet_31
+    21300062: zerox1sheet_32
+    21300064: zerox1sheet_33
+    21300066: zerox1sheet_34
+    21300068: zerox1sheet_35
+    21300070: zerox1sheet_36
+    21300072: zerox1sheet_37
+    21300074: zerox1sheet_38
+    21300076: zerox1sheet_39
+    21300078: zerox1sheet_40
+    21300080: zerox1sheet_41
+    21300082: zerox1sheet_42
+    21300084: zerox1sheet_43
+    21300086: zerox1sheet_44
+    21300088: zerox1sheet_45
+    21300090: zerox1sheet_46
+    21300092: zerox1sheet_47
+    21300094: zerox1sheet_48
+    21300096: zerox1sheet_49
+    21300098: zerox1sheet_50
+    21300100: zerox1sheet_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: zerox1sheet_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 257
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 257
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 257
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 257
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_8
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 257
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 257
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 257
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_11
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 257
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_12
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 257
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_13
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 257
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 205
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 205
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 205
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_17
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 205
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_19
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 205
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_20
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 205
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_21
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 204
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 153
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_23
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 153
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_24
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 183
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_25
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 151
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_26
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 151
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_27
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 150
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_28
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 170
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_29
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 146
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 102
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_31
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 102
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 102
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 102
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_34
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 102
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_35
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 100
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 48
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_37
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 48
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 48
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_39
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 48
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_40
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 48
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_41
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 48
+        width: 40
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 51
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_43
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 52
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_44
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_47
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_48
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_49
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_50
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zerox1sheet_51
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

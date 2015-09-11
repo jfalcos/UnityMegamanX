@@ -3,6 +3,7 @@ using System.Collections;
 
 public class IntroStageVileStateMachineBehavior : StateMachineBehaviour {
 
+
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 	//
@@ -15,14 +16,14 @@ public class IntroStageVileStateMachineBehavior : StateMachineBehaviour {
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		if(stateInfo.IsName("enemy-vile intro stage-laugh"))
+		if (stateInfo.IsName ("enemy-vile intro stage-laugh"))
 		{
-			MegamanInput playerInput = GameObject.FindObjectOfType<MegamanInput>();
-			DeathRogumer deathRogumer = GameObject.FindObjectOfType<DeathRogumer>();
-			EnemyIntroStageVile vile = GameObject.FindObjectOfType<EnemyIntroStageVile>();
+			MegamanInput playerInput = GameObject.FindObjectOfType<MegamanInput> ();
+			DeathRogumer deathRogumer = GameObject.FindObjectOfType<DeathRogumer> ();
+			EnemyIntroStageVile vile = GameObject.FindObjectOfType<EnemyIntroStageVile> ();
 
 			playerInput.manualLock = false;
-			deathRogumer.ReadyToLeaveScene();
+			deathRogumer.ReadyToLeaveScene ();
 			vile.readyToAttack = true;
 		}
 	}

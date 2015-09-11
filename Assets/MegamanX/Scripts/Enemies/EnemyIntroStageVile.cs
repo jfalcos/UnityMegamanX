@@ -17,7 +17,7 @@ public class EnemyIntroStageVile : Enemy
 	public Transform energyBallSpawnMarker = null;
 	public Transform handGrabPositionMarker = null;
 	public GroundCheck groundCheck = null;
-	public Collider2D deathRogumersLiftCollder = null;
+	public Collider2D deathRogumersLiftCollider = null;
 	public float damage = 1f;
 	public float constantDamageDelay = 0.5f;
 	public float walkSpeed = 1f;
@@ -78,12 +78,13 @@ public class EnemyIntroStageVile : Enemy
 		if(walkToMegaman)
 		{
 			WalkTowardsTarget(megamanController.transform.position + Vector3.right * 0.5f);
-			print(Vector3.Distance(megamanController.transform.position + Vector3.right * 0.5f, transform.position) + " && " + ((megamanController.transform.position.x - transform.position.x) < 0) + " (" + (megamanController.transform.position.x - transform.position.x + ")"));
 			if(ProximityCheck(megamanController.transform.position + Vector3.right * 0.5f, 0.25f) && ((megamanController.transform.position.x - transform.position.x) < 0))
 			{
 				walkToMegaman = false;
 				myAnimator.SetTrigger ("grabMegaman");
 				megamanController.OnGrabbedByEnemy (handGrabPositionMarker.position);
+				IntroStageZerosCutscene zerosCutscene = GameObject.FindObjectOfType<IntroStageZerosCutscene>();
+				StartCoroutine(zerosCutscene.BeginCutscene());
 			}
 		}
 	}
@@ -118,7 +119,7 @@ public class EnemyIntroStageVile : Enemy
 	{
 		yield return new WaitForSeconds (1f);
 		transform.SetParent (null);
-		Physics2D.IgnoreCollision (myCollider2D, deathRogumersLiftCollder);
+		SetIgnoreLiftCollision (true);
 		IntroJump ();
 	}
 
@@ -213,6 +214,17 @@ public class EnemyIntroStageVile : Enemy
 		translationVector.z = 0f;
 		transform.Translate(translationVector * slideSpeed * Time.deltaTime);
 		moving = false;
+	}
+
+	public void BreakArm()
+	{
+		myRigidbody2D.AddForce (new Vector2 (4000f, 2000f));
+		myAnimator.SetTrigger ("breakArm");
+	}
+
+	public void SetIgnoreLiftCollision(bool ignoreCollision)
+	{
+		Physics2D.IgnoreCollision (myCollider2D, deathRogumersLiftCollider, ignoreCollision);
 	}
 
 	public void Attack()

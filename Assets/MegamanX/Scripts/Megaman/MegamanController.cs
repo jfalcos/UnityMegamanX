@@ -7,7 +7,7 @@ public class MegamanController : MonoBehaviour {
 
 	private Hitpoints hitpoints = null;
 	private GenericWeaponManager weaponManager = null;
-	private Rigidbody2D myRigidbody2D = null;
+	private Rigidbody2D _myRigidbody2D = null;
 	private Collider2D _myCollider2D = null;
 	public Animator myAnimator = null;
 	public GroundCheck groundCheck = null;
@@ -24,7 +24,7 @@ public class MegamanController : MonoBehaviour {
 		}
 		weaponManager = GetComponent<GenericWeaponManager> ();
 		hitpoints = GetComponent<Hitpoints> ();
-		myRigidbody2D = GetComponent<Rigidbody2D> ();
+		_myRigidbody2D = GetComponent<Rigidbody2D> ();
 		_myCollider2D = GetComponent<Collider2D> ();
 	}
 
@@ -88,7 +88,7 @@ public class MegamanController : MonoBehaviour {
 
 //		if(groundCheck.grounded)
 //		{
-			myRigidbody2D.velocity = new Vector2 (axisSpeed * speed, myRigidbody2D.velocity.y);
+			_myRigidbody2D.velocity = new Vector2 (axisSpeed * speed, _myRigidbody2D.velocity.y);
 			if(axisSpeed == 0)
 			{
 				axisSpeed = 0.01f;
@@ -104,7 +104,7 @@ public class MegamanController : MonoBehaviour {
 			if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-jump"))
 			{
 				myAnimator.SetTrigger("jump");
-				myRigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+				_myRigidbody2D.AddForce (new Vector2 (0f, jumpForce));
 			}
 		}
 		else
@@ -113,7 +113,7 @@ public class MegamanController : MonoBehaviour {
 			{
 				if(localWallCheck.walled)
 				{
-					myRigidbody2D.AddForce(new Vector2(0f, myRigidbody2D.velocity.y + 60f));
+					_myRigidbody2D.AddForce(new Vector2(0f, _myRigidbody2D.velocity.y + 60f));
 					if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-wall jump"))
 					{
 						myAnimator.SetTrigger("wallJump");
@@ -152,7 +152,9 @@ public class MegamanController : MonoBehaviour {
 
 	public void CaptureBy(GameObject localGameObject)
 	{
-		myRigidbody2D.gravityScale = 0f;
+		_myRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+		myAnimator.Play ("idle");
+		_myRigidbody2D.gravityScale = 0f;
 		MegamanInput playerInput = GameObject.FindObjectOfType<MegamanInput> ();
 		playerInput.enabled = false;
 		myAnimator.SetFloat ("hSpeed", 0f);
@@ -161,12 +163,25 @@ public class MegamanController : MonoBehaviour {
 		chargingFX.gameObject.SetActive (false);
 		StopFire ();
 		DisableWeaponFireAnimation ();
+		EnableBentOnKneeAndHurt ();
+	}
+
+	public void TeleportOut()
+	{
+		myAnimator.SetTrigger ("teleportOut");
+	}
+
+	public void EnableBentOnKneeAndHurt()
+	{
 		myAnimator.SetBool ("capturedHurt", true);
 		myAnimator.SetTrigger ("capture");
 	}
 
 	public void OnGrabbedByEnemy(Vector3 grabPosition)
 	{
+		myAnimator.enabled = false;
+		myAnimator.enabled = true;
+		myAnimator.Play ("idle");
 		transform.position = grabPosition;
 		myAnimator.SetBool ("capturedHurt", false);
 		myAnimator.SetTrigger ("grabbed");
@@ -190,6 +205,14 @@ public class MegamanController : MonoBehaviour {
 		get
 		{
 			return hitpoints.GetRemainingHealthPercentage();
+		}
+	}
+	
+	public Rigidbody2D myRigidbody2D
+	{
+		get
+		{
+			return _myRigidbody2D;
 		}
 	}
 

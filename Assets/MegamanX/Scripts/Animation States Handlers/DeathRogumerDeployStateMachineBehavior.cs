@@ -16,7 +16,10 @@ public class DeathRogumerDeployStateMachineBehavior : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		DeathRogumer deathRogumer = GameObject.FindObjectOfType<DeathRogumer> ();
-		deathRogumer.EnableManualMovement ();
+		if(!deathRogumer.vile.activeSelf)
+		{
+			deathRogumer.EnableManualMovement ();
+		}
 	
 	}
 
