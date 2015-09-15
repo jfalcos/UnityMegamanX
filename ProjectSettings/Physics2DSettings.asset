@@ -3,6 +3,7 @@
 --- !u!19 &1
 Physics2DSettings:
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Gravity: {x: 0, y: -9.81000042}
   m_DefaultMaterial: {fileID: 0}
   m_VelocityIterations: 8
@@ -18,7 +19,7 @@ Physics2DSettings:
   m_TimeToSleep: .5
   m_LinearSleepTolerance: .00999999978
   m_AngularSleepTolerance: 2
-  m_RaycastsHitTriggers: 1
-  m_RaycastsStartInColliders: 1
+  m_QueriesHitTriggers: 1
+  m_QueriesStartInColliders: 1
   m_ChangeStopsCallbacks: 0
-  m_LayerCollisionMatrix: ff86ffffff86ffffff86ffffffffffffff86ffffff86ffffffffffffffffffffc8bbffffffcdffffff86ffffc883ffffc881ffffc881ffffc882ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  m_LayerCollisionMatrix: ff00fcffff00fcffff00fcffffffffffff00fcffff00fcffffffffffffffffffc83bfcffc84dffffc886fcffc883fcffc801fcffc801fcffc802fcffc80cfcffc802feffc802fdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

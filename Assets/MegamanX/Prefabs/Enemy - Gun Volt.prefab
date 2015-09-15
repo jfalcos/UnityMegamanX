@@ -82,7 +82,7 @@ GameObject:
   - 61: {fileID: 6189806}
   - 50: {fileID: 5058128}
   - 114: {fileID: 11442376}
-  m_Layer: 11
+  m_Layer: 16
   m_Name: Energy Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - 61: {fileID: 6120390}
   - 50: {fileID: 5063222}
   - 114: {fileID: 11423634}
-  m_Layer: 11
+  m_Layer: 16
   m_Name: Rocket Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107254}
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -417,6 +417,8 @@ MonoBehaviour:
   damage: 1
   speed: 2
   duration: 1
+  hitMultipleEnemies: 0
+  useTranslate: 0
 --- !u!114 &11438130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,6 +450,8 @@ MonoBehaviour:
   damage: 1
   speed: 2
   duration: 1
+  hitMultipleEnemies: 0
+  useTranslate: 0
 --- !u!114 &11448888
 MonoBehaviour:
   m_ObjectHideFlags: 1

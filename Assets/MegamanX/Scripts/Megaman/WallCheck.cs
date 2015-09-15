@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MegamanWallCheck : MonoBehaviour
+public class WallCheck : MonoBehaviour
 {
 	public bool _walled = false;
 	public LayerMask wallLayer;

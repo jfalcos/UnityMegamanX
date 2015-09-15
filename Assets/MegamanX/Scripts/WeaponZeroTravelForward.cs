@@ -4,7 +4,7 @@ using System.Collections;
 public class WeaponZeroTravelForward : DamageSource
 {
 	private Vector3 displacementVector = Vector3.zero;
-	private Rigidbody2D rigidbody2D = null;
+	private Rigidbody2D myRigidbody2D = null;
 	public float damage = 1f;
 	public float speed = 2f;
 	public float duration = 1f;
@@ -13,7 +13,7 @@ public class WeaponZeroTravelForward : DamageSource
 	
 	void Awake()
 	{
-		rigidbody2D = GetComponent<Rigidbody2D> ();
+		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 	
 	void Start()
@@ -29,7 +29,7 @@ public class WeaponZeroTravelForward : DamageSource
 			
 			if(!useTranslate)
 			{
-				rigidbody2D.velocity = displacementVector;
+				myRigidbody2D.velocity = displacementVector;
 			}
 			else
 			{
@@ -42,7 +42,7 @@ public class WeaponZeroTravelForward : DamageSource
 			
 			if(!useTranslate)
 			{
-				rigidbody2D.velocity = displacementVector;
+				myRigidbody2D.velocity = displacementVector;
 			}
 			else
 			{

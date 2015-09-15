@@ -15,8 +15,9 @@ public class EnemyHamminger : Enemy
 	public float proximityRadius = 0.2f;
 	public MegamanController target = null;
 
-	void Start()
+	protected override void Start()
 	{
+		base.Start ();
 		target = GameObject.FindObjectOfType<MegamanController> ();
 		moveTowardsPlayer = StartCoroutine (MoveTowardsPlayer ());
 	}
@@ -110,7 +111,6 @@ public class EnemyHamminger : Enemy
 			if(ProximityCheck(closestPositionBeforeAttack, 0.0001f))
 			{
 				reachedPosition = true;
-				Debug.Log(reachedPosition + " = true.");
 			}
 		}
 		yield return new WaitForSeconds (1f);

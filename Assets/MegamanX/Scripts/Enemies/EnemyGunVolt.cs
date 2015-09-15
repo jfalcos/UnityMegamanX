@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemyGunVolt : Enemy
 {
-	private Rigidbody2D myRigidbody2D = null;
 	private GameObject bulletInstance = null;
 	public Animator animator = null;
 	public float attackDelay = 1f;
@@ -17,11 +16,11 @@ public class EnemyGunVolt : Enemy
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
-		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 
-	void Start ()
+	protected override void Start ()
 	{
+		base.Start ();
 		InvokeRepeating ("Attack", attackDelay, attackDelay);
 	}
 

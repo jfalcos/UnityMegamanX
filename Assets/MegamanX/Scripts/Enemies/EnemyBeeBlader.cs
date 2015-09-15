@@ -2,11 +2,9 @@
 using System;
 using System.Collections;
 
-[RequireComponent (typeof(GenericWeaponManager))]
 [RequireComponent (typeof(WeaponBeeBlader))]
 public class EnemyBeeBlader : Enemy
 {
-	private GenericWeaponManager weaponManager = null;
 	private WeaponBeeBlader weaponBeeBlader = null;
 	private bool moveUp = true;
 	private bool moveDown = false;
@@ -26,15 +24,15 @@ public class EnemyBeeBlader : Enemy
 	protected override void Awake()
 	{
 		base.Awake ();
-		weaponManager = GetComponent<GenericWeaponManager> ();
 		weaponBeeBlader = GetComponent<WeaponBeeBlader> ();
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 		myCollider2D = GetComponent<BoxCollider2D> ();
 		myAnimator = mySprite.gameObject.GetComponent<Animator> ();
 	}
 
-	void Start()
+	protected override void Start()
 	{
+		base.Start ();
 		InvokeRepeating ("Attack", attackTimespan, attackTimespan);
 	}
 
@@ -55,7 +53,7 @@ public class EnemyBeeBlader : Enemy
 		}
 		else if(chance > 20 && chance <= 66)
 		{
-			GameObject rocket = weaponBeeBlader.SpawnRocket(rocketSpawnPoint.transform.position, rocketSpawnPoint.transform.rotation);
+			weaponBeeBlader.SpawnRocket(rocketSpawnPoint.transform.position, rocketSpawnPoint.transform.rotation);
 		}
 		else if(chance > 66)
 		{
@@ -81,13 +79,16 @@ public class EnemyBeeBlader : Enemy
 	{
 		if(moveDown)
 		{
-			float yDelta = Mathf.Lerp(transform.position.y, downPositionReference.transform.position.y, Time.deltaTime * speed);
-			transform.position = new Vector3(transform.position.x, yDelta, transform.position.z);
-			if(transform.position.y <= (downPositionReference.transform.position.y + 0.1f))
+			if(transform != null)
 			{
-				print ("Switch move down");
-				moveUp = true;
-				moveDown = false;
+				float yDelta = Mathf.Lerp(transform.position.y, downPositionReference.transform.position.y, Time.deltaTime * speed);
+				transform.position = new Vector3(transform.position.x, yDelta, transform.position.z);
+				if(transform.position.y <= (downPositionReference.transform.position.y + 0.1f))
+				{
+					print ("Switch move down");
+					moveUp = true;
+					moveDown = false;
+				}
 			}
 		}
 	}

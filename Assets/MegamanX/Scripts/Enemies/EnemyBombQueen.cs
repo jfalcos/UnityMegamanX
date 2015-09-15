@@ -21,8 +21,9 @@ public class EnemyBombQueen : Enemy
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 	
-	void Start()
+	protected override void Start()
 	{
+		base.Start ();
 	}
 
 	void Update()

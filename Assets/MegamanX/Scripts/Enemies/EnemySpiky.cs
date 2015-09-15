@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemySpiky : Enemy
 {
-	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
 	public Animator myAnimator = null;
 	public float damage = 1f;
@@ -13,10 +12,9 @@ public class EnemySpiky : Enemy
 	protected override void Awake()
 	{
 		base.Awake ();
-		myRigidbody2D = GetComponent<Rigidbody2D> ();
 	}
 
-	void Start()
+	protected override void Start()
 	{
 	}
 

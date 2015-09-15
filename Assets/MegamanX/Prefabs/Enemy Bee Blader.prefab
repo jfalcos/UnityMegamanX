@@ -76,7 +76,7 @@ GameObject:
   - 95: {fileID: 9517576}
   - 60: {fileID: 6055408}
   m_Layer: 8
-  m_Name: Graphics
+  m_Name: Collider - Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

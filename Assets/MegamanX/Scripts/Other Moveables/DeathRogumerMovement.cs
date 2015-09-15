@@ -4,15 +4,11 @@ using System.Collections;
 public class DeathRogumerMovement : MonoBehaviour
 {
 	private MegamanController megamanController = null;
-	private bool moveLeft = false;
-	private bool moveRight = false;
-	private bool reachedGoalPosition = false;
 	private bool pickedDirection = false;
 	private Vector3 startPosition = Vector3.zero;
 	private Vector3 goalPosition = Vector3.zero;
 	private float startTime = 0f;
 	private float journeyLength = 0f;
-	private Vector3 translationVector = Vector3.zero;
 	public float speed = 1f;
 	public Transform leftPositionMarker = null;
 	public Transform rightPositionMarker = null;
@@ -43,21 +39,16 @@ public class DeathRogumerMovement : MonoBehaviour
 
 		if(positionReferenceToMegaman.x > 0)
 		{
-			moveLeft = false;
-			moveRight = true;
 			goalPosition = rightPositionMarker.transform.position;
 		}
 		else
 		{
-			moveLeft = true;
-			moveRight = false;
 			goalPosition = leftPositionMarker.transform.position;
 		}
 
 		startTime = Time.time;
 		startPosition = transform.position;
 		pickedDirection = true;
-		reachedGoalPosition = false;
 		journeyLength = Vector3.Distance (startPosition, goalPosition);
 	}
 

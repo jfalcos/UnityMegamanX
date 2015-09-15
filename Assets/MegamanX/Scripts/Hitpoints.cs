@@ -12,6 +12,7 @@ public class Hitpoints : MonoBehaviour
 	public DelegateOnDamage onDamage;
 	public DelegateOnDamage onKill;
 	public float hitpoints = 1f;
+	public bool invulnerable = false;
 
 	void Start()
 	{
@@ -20,7 +21,6 @@ public class Hitpoints : MonoBehaviour
 
 	public void Damage(float amount, GameObject source, GameObject sourceOwner)
 	{
-		print (gameObject + "," + amount + "," + source + "," + sourceOwner);
 		_damageSource = source;
 		_damageSourceOwner = sourceOwner;
 
@@ -29,7 +29,10 @@ public class Hitpoints : MonoBehaviour
 			onDamage(this);
 		}
 
-		hitpoints -= amount;
+		if(!invulnerable)
+		{
+			hitpoints -= amount;
+		}
 
 		if(hitpoints <= 0f)
 		{

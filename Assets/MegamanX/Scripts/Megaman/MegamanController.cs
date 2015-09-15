@@ -3,17 +3,20 @@ using System;
 using System.Collections;
 
 [RequireComponent (typeof(GenericWeaponManager))]
+[RequireComponent (typeof(Jump2D))]
+[RequireComponent (typeof(WallJump2D))]
 public class MegamanController : MonoBehaviour {
 
 	private Hitpoints hitpoints = null;
 	private GenericWeaponManager weaponManager = null;
+	private Jump2D myJump2D = null;
+	private WallJump2D myWallJump2D = null;
 	private Rigidbody2D _myRigidbody2D = null;
 	private Collider2D _myCollider2D = null;
 	public Animator myAnimator = null;
 	public GroundCheck groundCheck = null;
-	public MegamanWallCheck[] wallCheck = null;
+	public WallCheck[] wallCheck = null;
 	public float speed = 5.0f;
-	public float jumpForce = 400f;
 	public ParticleSystem chargingFX = null;
 
 	void Awake()
@@ -26,6 +29,8 @@ public class MegamanController : MonoBehaviour {
 		hitpoints = GetComponent<Hitpoints> ();
 		_myRigidbody2D = GetComponent<Rigidbody2D> ();
 		_myCollider2D = GetComponent<Collider2D> ();
+		myJump2D = GetComponent<Jump2D> ();
+		myWallJump2D = GetComponent<WallJump2D> ();
 	}
 
 	void Start ()
@@ -99,29 +104,8 @@ public class MegamanController : MonoBehaviour {
 
 	public void Jump()
 	{
-		if(groundCheck.grounded)
-		{
-			if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-jump"))
-			{
-				myAnimator.SetTrigger("jump");
-				_myRigidbody2D.AddForce (new Vector2 (0f, jumpForce));
-			}
-		}
-		else
-		{
-			foreach(MegamanWallCheck localWallCheck in wallCheck)
-			{
-				if(localWallCheck.walled)
-				{
-					_myRigidbody2D.AddForce(new Vector2(0f, _myRigidbody2D.velocity.y + 60f));
-					if(!myAnimator.GetCurrentAnimatorStateInfo(0).IsName("megaman-wall jump"))
-					{
-						myAnimator.SetTrigger("wallJump");
-						break;
-					}
-				}
-			}
-		}
+		myJump2D.Jump (myAnimator, myRigidbody2D, groundCheck);
+		myWallJump2D.WallJump (myAnimator, myRigidbody2D, wallCheck);
 	}
 
 	public void FireFX()

@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9506126}
   - 114: {fileID: 11498394}
   - 61: {fileID: 6140230}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Vile's Energy Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,6 +131,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
