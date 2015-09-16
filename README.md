@@ -7,7 +7,7 @@ Megaman X is a game first released for the SNES console.
 For a detailed description of the original game: 
  [https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)](https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29)
 
-[Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
+[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
 ------------------------------------------------------------------------
 
 Summary
@@ -50,7 +50,7 @@ Rewards
  - You have fun while developing the game.
  - You get a lot of experience for 2D, sidescrollers games.
  - Portfolio.
- - 
+
 Current Team
 ------------
 
