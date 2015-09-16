@@ -1,43 +1,75 @@
 # UnityMegamanX
 
+I started this project because I have fun working on it.
+
 Megaman X is a game first released for the SNES console.
-Here is the reference for the wiki: https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)
 
-The game is currently being developed in 2D. It is not HD yet but ideally the game is going to be HD.
+For a detailed description of the original game: 
+ [https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)](https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29)
 
-The first step is to get a production quality replica of the game using the Unity Engine.
-The second step is to add our own bosses and features.
+[Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
+------------------------------------------------------------------------
 
-The goal is to have fun and get a good portfolio piece when this project gets finished.
+Summary
+-------
+ - Engine: Unity (5.2)
+ - 2D
+ - High Definition (HD)
+ - Unpaid
+ - C#
 
-Rewards for working on this project:
-Fun
-Experience
-Portfolio
-Maybe working on our own platformer once we are done with this one.
 
+Goal #1
+-------
+
+ - Get a production quality replica of the original game using the Unity
+   Engine.
+
+**State: STARTED. Intro stage is playable from the beginning to the end. It needs polish.**
+
+
+Goal #2
+-------
+
+ - Add new bosses.
+ - Add more skills.
+ - Add more features.
+ - Add more game modes.
+
+**State: NOT STARTED**
+
+
+Extras
+------
+ - We have an HD version of the game.
+
+**State: NOT STARTED**
+
+Rewards
+------- 
+ - You have fun while developing the game.
+ - You get a lot of experience for 2D, sidescrollers games.
+ - Portfolio.
+ - 
 Current Team
+------------
 
-1 Senior programmer (Javier aka Dunmord)
+ - Senior programmer - Javier aka Dunmord
+ - Jr. Artist/Designer - Jacky
+ - Project admin - Javier aka Dunmord
 
-1 Jr. Artists/Designer (Jacky)
+We Need More
+------------
 
-1 Project admin (Javier aka Dunmord)
+ - 2D artists.
+ - 2D animators.
+ - UI artists.
+ - Unity programmers.
+ - Level designers.
 
-Urgent Need
+Think you can help but don't fall in any category? Shoot me an email: javierfalconc@gmail.com
 
-More 2D artists that can work on UI, characters and sprite animations.
+Game References
+---------------
 
-Programmers familiar with the Unity Engine.
-
-Level designers.
-
-
-CURRENT STATE
-
-Intro stage is playable from the beginning to the end.
-
-For a more detailed view of the tasks that have been completed and are currently being worked on, follow this link: https://trello.com/b/id4gzSrT/megamanx-unity
-
-For a reference of all the enemies, follow this link:
-http://strategywiki.org/wiki/Mega_Man_X/Enemies
+ - [Enemy list](http://strategywiki.org/wiki/Mega_Man_X/Enemies)
