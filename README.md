@@ -38,3 +38,6 @@ CURRENT STATE
 Intro stage is playable from the beginning to the end.
 
 For a more detailed view of the tasks that have been completed and are currently being worked on, follow this link: https://trello.com/b/id4gzSrT/megamanx-unity
+
+For a reference of all the enemies, follow this link:
+http://strategywiki.org/wiki/Mega_Man_X/Enemies
