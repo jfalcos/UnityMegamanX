@@ -7,7 +7,7 @@ Megaman X is a game first released for the SNES console.
 For a detailed description of the original game: 
  [https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)](https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29)
 
-[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
+[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity) (Still updating it)
 ------------------------------------------------------------------------
 
 Summary
