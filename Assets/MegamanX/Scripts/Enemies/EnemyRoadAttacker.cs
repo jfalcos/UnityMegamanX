@@ -118,6 +118,7 @@ public class EnemyRoadAttacker : Enemy
 
 	protected override void OnDamage (Hitpoints hitpoints)
 	{
+		base.OnDamage (hitpoints);
 		if(hitpoints.hitpoints > thirdFormActivationHitpoints && hitpoints.hitpoints <= secondFormActivationHitpoints)
 		{
 			ActivateSecondForm();
@@ -134,6 +135,7 @@ public class EnemyRoadAttacker : Enemy
 		myCollider2D.isTrigger = false;
 		firstFormGraphics.SetActive (false);
 		secondFormGraphics.SetActive (true);
+		myAnimator = secondFormGraphics.GetComponent<Animator> ();
 	}
 
 	private void ActivateThirdForm()
@@ -141,5 +143,6 @@ public class EnemyRoadAttacker : Enemy
 		currentForm = 3;
 		secondFormGraphics.SetActive (false);
 		thirdFormGraphics.SetActive (true);
+		myAnimator = thirdFormGraphics.GetComponent<Animator> ();
 	}
 }

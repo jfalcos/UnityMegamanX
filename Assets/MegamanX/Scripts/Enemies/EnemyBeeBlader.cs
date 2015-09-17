@@ -10,7 +10,6 @@ public class EnemyBeeBlader : Enemy
 	private bool moveDown = false;
 	private Rigidbody2D myRigidbody2D = null;
 	private BoxCollider2D myCollider2D = null;
-	private Animator myAnimator = null;
 	public float speed = 1f;
 	public Transform ballDeVouxSpawnPoint = null;
 	public Transform rocketSpawnPoint = null;
@@ -85,7 +84,6 @@ public class EnemyBeeBlader : Enemy
 				transform.position = new Vector3(transform.position.x, yDelta, transform.position.z);
 				if(transform.position.y <= (downPositionReference.transform.position.y + 0.1f))
 				{
-					print ("Switch move down");
 					moveUp = true;
 					moveDown = false;
 				}

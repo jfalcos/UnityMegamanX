@@ -4,7 +4,6 @@ using System.Collections;
 public class EnemySpiky : Enemy
 {
 	private Vector2 moveVector = Vector2.zero;
-	public Animator myAnimator = null;
 	public float damage = 1f;
 	public float speed = 1f;
 	public bool moveLeft = true;

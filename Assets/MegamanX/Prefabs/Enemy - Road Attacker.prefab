@@ -217,7 +217,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.3880005, y: .869000018, z: 0}
+  m_LocalPosition: {x: 2.27099991, y: -.145999998, z: 0}
   m_LocalScale: {x: -1, y: 1, z: .699999988}
   m_Children:
   - {fileID: 468854}
@@ -486,6 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 9
+  invulnerable: 0
 --- !u!114 &11447678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -550,6 +551,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   onDestroyFX: {fileID: 172694}
+  myAnimator: {fileID: 9553368}
   firstFormGraphics: {fileID: 130244}
   secondFormGraphics: {fileID: 141138}
   thirdFormGraphics: {fileID: 194368}

@@ -4,7 +4,6 @@ using System.Collections;
 public class EnemyGunVolt : Enemy
 {
 	private GameObject bulletInstance = null;
-	public Animator animator = null;
 	public float attackDelay = 1f;
 	public GameObject energyBullet = null;
 	public GameObject rocketBullet = null;
@@ -12,7 +11,7 @@ public class EnemyGunVolt : Enemy
 	protected override void Awake()
 	{
 		base.Awake ();
-		if(animator == null)
+		if(myAnimator == null)
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
@@ -40,13 +39,13 @@ public class EnemyGunVolt : Enemy
 	{
 		if(bulletInstance == null)
 		{
-			animator.SetBool("attack", true);
+			myAnimator.SetBool("attack", true);
 		}
 	}
 
 	void StopAttackAnimation()
 	{
-		animator.SetBool ("attack", false);
+		myAnimator.SetBool ("attack", false);
 	}
 
 	public void ChooseAttackTypeAndShoot()

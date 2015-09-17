@@ -12,7 +12,6 @@ public class EnemyIntroStageVile : Enemy
 	private GameObject energyBallInstance = null;
 	public Collider2D myCollider2D = null;
 	public Collider2D myTriggerCollider2D = null;
-	public Animator myAnimator = null;
 	public GameObject vilesEnergyBall = null;
 	public Transform energyBallSpawnMarker = null;
 	public Transform handGrabPositionMarker = null;

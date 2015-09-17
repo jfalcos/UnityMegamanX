@@ -468,7 +468,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   onDestroyFX: {fileID: 101620}
-  animator: {fileID: 9521050}
+  myAnimator: {fileID: 9521050}
   attackDelay: 1.5
   energyBullet: {fileID: 161824}
   rocketBullet: {fileID: 196556}
@@ -484,6 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 20
+  invulnerable: 0
 --- !u!114 &11498726
 MonoBehaviour:
   m_ObjectHideFlags: 1

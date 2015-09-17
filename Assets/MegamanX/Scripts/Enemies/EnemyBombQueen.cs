@@ -6,7 +6,6 @@ public class EnemyBombQueen : Enemy
 	private Rigidbody2D myRigidbody2D = null;
 	private Vector2 moveVector = Vector2.zero;
 	private bool canMove = true;
-	public Animator myAnimator = null;
 	public GameObject bombBullet = null;
 	public float damage = 1f;
 	public float speed = 1f;

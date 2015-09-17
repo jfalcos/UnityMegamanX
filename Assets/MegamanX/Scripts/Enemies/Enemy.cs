@@ -6,6 +6,7 @@ public class Enemy : DamageSource
 {
 	protected Hitpoints hitpoints = null;
 	public GameObject onDestroyFX = null;
+	public Animator myAnimator = null;
 
 	protected virtual void Awake()
 	{
@@ -30,11 +31,20 @@ public class Enemy : DamageSource
 
 	protected virtual void OnDamage(Hitpoints hitpoints)
 	{
+		if(myAnimator != null)
+		{
+			myAnimator.SetTrigger("damage");
+		}
 	}
 
 	protected virtual void OnKill(Hitpoints hitpoints)
 	{
 		DestroyMe ();
+	}
+
+	protected virtual void PlayDamageAnimation()
+	{
+
 	}
 
 	protected virtual void DestroyMe()

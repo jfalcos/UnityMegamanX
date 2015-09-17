@@ -18,6 +18,7 @@ public class MegamanController : MonoBehaviour {
 	public WallCheck[] wallCheck = null;
 	public float speed = 5.0f;
 	public ParticleSystem chargingFX = null;
+	public ParticleSystem[] dieFX = null;
 
 	void Awake()
 	{
@@ -64,8 +65,20 @@ public class MegamanController : MonoBehaviour {
 
 	private void OnKill(Hitpoints hitpoints)
 	{
+		myAnimator.SetTrigger ("die");
+		StartCoroutine (PlayDeathFX ());
 	}
 
+	private IEnumerator PlayDeathFX()
+	{
+		foreach(ParticleSystem ps in dieFX)
+		{
+			ps.gameObject.SetActive(true);
+			ps.Play();
+			yield return new WaitForSeconds(0.3f);
+		}
+		yield return null;
+	}
 	private void RotateToDirection(float horizontalAxis)
 	{
 		Vector3 myScale = transform.localScale;
