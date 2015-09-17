@@ -73,3 +73,6 @@ Game References
 ---------------
 
  - [Enemy list](http://strategywiki.org/wiki/Mega_Man_X/Enemies)
+
+
+**I do not own a license to this game or any of it's IP. This project is for fun, practice, portfolio and pure love for the franchise.**
