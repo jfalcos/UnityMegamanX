@@ -35,11 +35,29 @@ public class EnemyHamminger : Enemy
 			Hitpoints hitpoints = localCollision2D.gameObject.GetComponent<Hitpoints>();
 			if(hitpoints != null)
 			{
+				SafeStopCoroutine(flyAwayRoutine);
 				hitpoints.Damage(damage, gameObject, gameObject);
 				collided = true;
-				StopCoroutine(flyAwayRoutine);
+				SafeStopCoroutine(moveTowardsPlayer);
+				moveTowardsPlayer = StartCoroutine(MoveTowardsPlayer());
 			}
 		}
+	}
+	
+	IEnumerator MoveTowardsPlayer()
+	{
+		bool attackDistanceReached = false;
+		flyAwayRoutine = StartCoroutine (FlyAway ());
+		
+		while(!attackDistanceReached)
+		{
+			translateVector = target.transform.position - transform.position;
+			transform.Translate (translateVector * speed * Time.deltaTime);
+			attackDistanceReached = ProximityCheckAgainstMegamanController(proximityRadius, collidableLayers.value);
+			yield return new WaitForSeconds(0.01f);
+		}
+		closestPositionBeforeAttack = transform.position;
+		attackPlayer = StartCoroutine (AttackPlayer ());
 	}
 
 	IEnumerator FlyAway()
@@ -62,22 +80,6 @@ public class EnemyHamminger : Enemy
 		}
 
 		Destroy (gameObject);
-	}
-
-	IEnumerator MoveTowardsPlayer()
-	{
-		bool attackDistanceReached = false;
-		flyAwayRoutine = StartCoroutine (FlyAway ());
-
-		while(!attackDistanceReached)
-		{
-			translateVector = target.transform.position - transform.position;
-			transform.Translate (translateVector * speed * Time.deltaTime);
-			attackDistanceReached = ProximityCheckAgainstMegamanController(proximityRadius, collidableLayers.value);
-			yield return new WaitForSeconds(0.01f);
-		}
-		closestPositionBeforeAttack = transform.position;
-	 	attackPlayer = StartCoroutine (AttackPlayer ());
 	}
 
 	IEnumerator AttackPlayer()
@@ -112,6 +114,7 @@ public class EnemyHamminger : Enemy
 			{
 				reachedPosition = true;
 			}
+			yield return new WaitForSeconds(0.01f);
 		}
 		yield return new WaitForSeconds (1f);
 		moveTowardsPlayer = StartCoroutine (MoveTowardsPlayer ());
