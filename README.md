@@ -55,7 +55,6 @@ Current Team
 ------------
 
  - Senior programmer - Javier aka Dunmord
- - Jr. Artist/Designer - Jacky
  - Project admin - Javier aka Dunmord
 
 We Need More
