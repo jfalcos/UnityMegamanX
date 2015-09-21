@@ -46,31 +46,13 @@ public class EnemyBombQueen : Enemy
 	{
 		if(canMove)
 		{
-			if(moveLeft)
-			{
-				moveVector.x = transform.right.x * -1 * speed;
-				moveVector.y = 0f;
-			}
-			else
-			{
-				moveVector.x = transform.right.x * speed;
-				moveVector.y = 0f;
-			}
-			myRigidbody2D.velocity = moveVector;
-	//		myAnimator.SetFloat ("hSpeed", speed);
+			VelocityMove(moveLeft, speed, Time.fixedDeltaTime, moveVector, myRigidbody2D);
 		}
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D localCollision2D)
 	{
-		if(CanCollideWith(localCollision2D.gameObject))
-		{
-			Hitpoints hitpoints = localCollision2D.gameObject.GetComponent<Hitpoints>();
-			if(hitpoints != null)
-			{
-				hitpoints.Damage(damage, gameObject, gameObject);
-			}
-		}
+		Damage (localCollision2D.gameObject, damage);
 	}
 	
 	IEnumerator StartDroppingBombs(GameObject localGameObject)

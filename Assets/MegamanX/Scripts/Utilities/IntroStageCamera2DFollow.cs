@@ -10,8 +10,11 @@ public class IntroStageCamera2DFollow : MonoBehaviour
 	public float lookAheadMoveThreshold = 0.1f;
 	public float yBottomPositionLimit = 0f;
 	public float deathRogumerCameraSize = 1.1f;
-	public bool enableYLimit = false;
-	
+	public CameraBoundaries defaultCameraLimit = null;
+	public CameraBoundaries beeBlader1CameraLimit = null;
+	public CameraBoundaries beeBlader2CameraLimit = null;
+	public CameraBoundaries vileModeCameraLimit = null;
+
 	private Camera myCamera = null;
 	private float m_OffsetZ;
 	private Vector3 m_LastTargetPosition;
@@ -26,6 +29,8 @@ public class IntroStageCamera2DFollow : MonoBehaviour
 	// Use this for initialization
 	private void Start()
 	{
+		EnableDefaultMode ();
+
 		m_LastTargetPosition = target.position;
 		m_OffsetZ = (transform.position - target.position).z;
 		transform.parent = null;
@@ -52,19 +57,36 @@ public class IntroStageCamera2DFollow : MonoBehaviour
 		Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
 		Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 		
-		if(newPos.y <= yBottomPositionLimit && enableYLimit)
-		{
-			newPos.y = yBottomPositionLimit;
-		}
-		
 		transform.position = newPos;
 		
 		m_LastTargetPosition = target.position;
 	}
 
+	public void EnableDefaultMode()
+	{
+		SetCameraLimitsEnabled (true, false, false, false);
+	}
+
+	public void EnableBeeBlader1Mode()
+	{
+		SetCameraLimitsEnabled (false, true, false, false);
+	}
+
+	public void EnableBeeBlader2Mode()
+	{
+		SetCameraLimitsEnabled (false, false, true, false);
+	}
+
 	public void EnableDeathRogumerMode()
 	{
-		myCamera.orthographicSize = deathRogumerCameraSize;
-		enableYLimit = true;
+		SetCameraLimitsEnabled (false, false, false, true);
+	}
+	
+	void SetCameraLimitsEnabled(bool defaultEnabled, bool beeBlader1Enabled, bool beeBlader2Enabled, bool vileModeEnabled)
+	{
+		defaultCameraLimit.enabled = defaultEnabled;
+		beeBlader1CameraLimit.enabled = beeBlader1Enabled;
+		beeBlader2CameraLimit.enabled = beeBlader2Enabled;
+		vileModeCameraLimit.enabled = vileModeEnabled;
 	}
 }

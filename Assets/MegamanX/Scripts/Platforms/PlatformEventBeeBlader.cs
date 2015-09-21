@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlatformEventBeeBlader : PlatformEvent
 {
-	private Hitpoints beeBladerHitpoints = null;
 	private Rigidbody2D myRigidbody2D = null;
 	public EnemyBeeBlader beeBlader = null;
 
@@ -14,17 +13,16 @@ public class PlatformEventBeeBlader : PlatformEvent
 			Debug.LogError(gameObject + " is not configured.");
 		}
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
-		beeBladerHitpoints = beeBlader.gameObject.GetComponent<Hitpoints> ();
 	}
 
 	void OnEnable()
 	{
-		beeBladerHitpoints.onKill += OnKill;
+		beeBlader.hitpoints.onKill += OnKill;
 	}
 
 	void OnDisable()
 	{
-		beeBladerHitpoints.onKill -= OnKill;
+		beeBlader.hitpoints.onKill -= OnKill;
 	}
 
 	void OnKill(Hitpoints hitpoints)

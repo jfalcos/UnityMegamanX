@@ -8,6 +8,7 @@ using System.Collections;
 public class MegamanController : MonoBehaviour {
 
 	private Hitpoints hitpoints = null;
+	private MegamanInput playerInput = null;
 	private GenericWeaponManager weaponManager = null;
 	private Jump2D myJump2D = null;
 	private WallJump2D myWallJump2D = null;
@@ -32,6 +33,7 @@ public class MegamanController : MonoBehaviour {
 		_myCollider2D = GetComponent<Collider2D> ();
 		myJump2D = GetComponent<Jump2D> ();
 		myWallJump2D = GetComponent<WallJump2D> ();
+		playerInput = GetComponent<MegamanInput> ();
 	}
 
 	void Start ()
@@ -65,7 +67,11 @@ public class MegamanController : MonoBehaviour {
 
 	private void OnKill(Hitpoints hitpoints)
 	{
+		myCollider2D.enabled = false;
+		myRigidbody2D.gravityScale = 0f;
+		playerInput.enabled = false;
 		myAnimator.SetTrigger ("die");
+		myRigidbody2D.velocity = Vector2.zero;
 		StartCoroutine (PlayDeathFX ());
 	}
 
@@ -77,6 +83,8 @@ public class MegamanController : MonoBehaviour {
 			ps.Play();
 			yield return new WaitForSeconds(0.3f);
 		}
+		yield return new WaitForSeconds (3f);
+		GameManager.instance.RestartLevel ();
 		yield return null;
 	}
 	private void RotateToDirection(float horizontalAxis)

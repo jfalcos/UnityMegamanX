@@ -22,25 +22,14 @@ public class EnemyHamminger : Enemy
 		moveTowardsPlayer = StartCoroutine (MoveTowardsPlayer ());
 	}
 
-	void FixedUpdate()
-	{
-//		translateVector = target.transform.position - transform.position;
-//		transform.Translate (translateVector * speed * Time.deltaTime);
-	}
-
 	void OnTriggerEnter2D(Collider2D localCollision2D)
 	{
-		if(CanCollideWith(localCollision2D.gameObject))
+		if(Damage(localCollision2D.gameObject, damage))
 		{
-			Hitpoints hitpoints = localCollision2D.gameObject.GetComponent<Hitpoints>();
-			if(hitpoints != null)
-			{
-				SafeStopCoroutine(flyAwayRoutine);
-				hitpoints.Damage(damage, gameObject, gameObject);
-				collided = true;
-				SafeStopCoroutine(moveTowardsPlayer);
-				moveTowardsPlayer = StartCoroutine(MoveTowardsPlayer());
-			}
+			SafeStopCoroutine(flyAwayRoutine);
+			collided = true;
+			SafeStopCoroutine(moveTowardsPlayer);
+			moveTowardsPlayer = StartCoroutine(MoveTowardsPlayer());
 		}
 	}
 	

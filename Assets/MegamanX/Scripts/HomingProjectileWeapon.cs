@@ -25,10 +25,8 @@ public class HomingProjectileWeapon : DamageSource
 	{
 		if(target != null)
 		{
-			if(CanCollideWith(localCollider2D.gameObject))
+			if(Damage(localCollider2D.gameObject, damage) != null)
 			{
-				Hitpoints hitpoints = localCollider2D.GetComponent<Hitpoints>();
-				hitpoints.Damage(damage, gameObject, gameObject);
 				Destroy (gameObject);
 			}
 		}

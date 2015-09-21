@@ -63,26 +63,20 @@ public class WeaponTravelForwardExplode : DamageSource
 
 	void SelfDestructAndDoDamage(GameObject collidingObject)
 	{
-		if(CanCollideWith(collidingObject))
+		Hitpoints hitpoints = null;
+		hitpoints = Damage (collidingObject, damage, gameObject, damageSourceOwner);
+
+		if(hitpoints != null)
 		{
-			Hitpoints collidingObjectHitpoints = collidingObject.GetComponent<Hitpoints> ();
 			if(hitMultipleEnemies)
 			{
-				if(collidingObjectHitpoints != null)
+				if(damage <= hitpoints.hitpoints)
 				{
-					collidingObjectHitpoints.Damage (damage, gameObject, damageSourceOwner);
-					if(damage <= collidingObjectHitpoints.hitpoints)
-					{
-						Destroy (gameObject);
-					}
+					Destroy (gameObject);
 				}
 			}
 			else
 			{
-				if(collidingObjectHitpoints != null)
-				{
-					collidingObjectHitpoints.Damage (damage, gameObject, damageSourceOwner);
-				}
 				Destroy (gameObject);
 			}
 		}
