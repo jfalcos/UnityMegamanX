@@ -10,6 +10,7 @@ public class EnemyBeeBlader : Enemy
 	private bool moveDown = false;
 	private Rigidbody2D myRigidbody2D = null;
 	private BoxCollider2D myCollider2D = null;
+	private IntroStageCamera2DFollow camera2D = null;
 	public float speed = 1f;
 	public Transform ballDeVouxSpawnPoint = null;
 	public Transform rocketSpawnPoint = null;
@@ -19,6 +20,9 @@ public class EnemyBeeBlader : Enemy
 	public SpriteRenderer mySprite = null;
 	public Sprite destroyedSprite = null;
 	public PolygonCollider2D destroyedCollider = null;
+	public PlatformEventBeeBlader platformEvent = null;
+	public bool amIBeeBlader1 = false;
+	public bool amIBeeBlader2 = false;
 
 	protected override void Awake()
 	{
@@ -27,6 +31,7 @@ public class EnemyBeeBlader : Enemy
 		myRigidbody2D = GetComponent<Rigidbody2D> ();
 		myCollider2D = GetComponent<BoxCollider2D> ();
 		myAnimator = mySprite.gameObject.GetComponent<Animator> ();
+		camera2D = GameObject.FindObjectOfType<IntroStageCamera2DFollow> ();
 	}
 
 	protected override void Start()
@@ -39,6 +44,23 @@ public class EnemyBeeBlader : Enemy
 	{
 		MoveUp ();
 		MoveDown ();
+	}
+
+	protected override void OnEnable ()
+	{
+		base.OnEnable ();
+		if(platformEvent != null)
+		{
+			platformEvent.enabled = true;
+		}
+		if(amIBeeBlader1)
+		{
+			camera2D.EnableBeeBlader1Mode();
+		}
+		else if(amIBeeBlader2)
+		{
+			camera2D.EnableBeeBlader2Mode();
+		}
 	}
 
 	private void Attack()

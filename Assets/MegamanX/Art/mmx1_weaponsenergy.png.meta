@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 95279675c8d16f14998c2d305cc22bc9
+timeCreated: 1443033466
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mmx1_weaponsenergy_13
+    21300002: mmx1_weaponsenergy_14
+    21300004: mmx1_weaponsenergy_28
+    21300006: mmx1_weaponsenergy_30
+    21300008: mmx1_weaponsenergy_31
+    21300010: mmx1_weaponsenergy_32
+    21300012: mmx1_weaponsenergy_33
+    21300014: mmx1_weaponsenergy_34
+    21300016: mmx1_weaponsenergy_49
+    21300018: mmx1_weaponsenergy_50
+    21300020: mmx1_weaponsenergy_51
+    21300022: mmx1_weaponsenergy_63
+    21300024: mmx1_weaponsenergy_64
+    21300026: mmx1_weaponsenergy_65
+    21300028: mmx1_weaponsenergy_81
+    21300030: mmx1_weaponsenergy_82
+    21300032: mmx1_weaponsenergy_83
+    21300034: mmx1_weaponsenergy_94
+    21300036: mmx1_weaponsenergy_95
+    21300038: mmx1_weaponsenergy_96
+    21300040: mmx1_weaponsenergy_109
+    21300042: mmx1_weaponsenergy_110
+    21300044: mmx1_weaponsenergy_111
+    21300046: mmx1_weaponsenergy_123
+    21300048: mmx1_weaponsenergy_124
+    21300050: mmx1_weaponsenergy_125
+    21300052: mmx1_weaponsenergy_140
+    21300054: mmx1_weaponsenergy_141
+    21300056: mmx1_weaponsenergy_142
+    21300058: mmx1_weaponsenergy_152
+    21300060: mmx1_weaponsenergy_153
+    21300062: mmx1_weaponsenergy_167
+    21300064: mmx1_weaponsenergy_168
+    21300066: mmx1_weaponsenergy_169
+    21300068: mmx1_weaponsenergy_170
+    21300070: mmx1_weaponsenergy_0
+    21300072: mmx1_weaponsenergy_1
+    21300074: mmx1_weaponsenergy_2
+    21300076: mmx1_weaponsenergy_3
+    21300078: mmx1_weaponsenergy_4
+    21300080: mmx1_weaponsenergy_5
+    21300082: mmx1_weaponsenergy_6
+    21300084: mmx1_weaponsenergy_7
+    21300086: mmx1_weaponsenergy_8
+    21300088: mmx1_weaponsenergy_9
+    21300090: mmx1_weaponsenergy_10
+    21300092: mmx1_weaponsenergy_11
+    21300094: mmx1_weaponsenergy_12
+    21300096: mmx1_weaponsenergy_15
+    21300098: mmx1_weaponsenergy_16
+    21300100: mmx1_weaponsenergy_17
+    21300102: mmx1_weaponsenergy_18
+    21300104: mmx1_weaponsenergy_19
+    21300106: mmx1_weaponsenergy_20
+    21300108: mmx1_weaponsenergy_21
+    21300110: mmx1_weaponsenergy_22
+    21300112: mmx1_weaponsenergy_23
+    21300114: mmx1_weaponsenergy_24
+    21300116: mmx1_weaponsenergy_25
+    21300118: mmx1_weaponsenergy_26
+    21300120: mmx1_weaponsenergy_27
+    21300122: mmx1_weaponsenergy_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mmx1_weaponsenergy_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 14
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 14
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 176
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 174
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 174
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 157
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 155
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 138
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 119
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 100
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 98
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 98
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 81
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_20
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 62
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_23
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 43
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_26
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 41
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 21
+        width: 56
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_29
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 22
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_32
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 11
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 3, y: 1, z: 3, w: 1}
+    - name: mmx1_weaponsenergy_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mmx1_weaponsenergy_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 64
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

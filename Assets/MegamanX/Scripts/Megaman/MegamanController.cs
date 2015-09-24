@@ -20,6 +20,7 @@ public class MegamanController : MonoBehaviour {
 	public float speed = 5.0f;
 	public ParticleSystem chargingFX = null;
 	public ParticleSystem[] dieFX = null;
+	public PauseMenuManager pauseMenuManager = null;
 
 	void Awake()
 	{

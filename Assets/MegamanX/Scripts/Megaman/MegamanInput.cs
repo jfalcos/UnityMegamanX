@@ -36,11 +36,15 @@ public class MegamanInput : MonoBehaviour
 			}
 			else if(Input.GetButtonUp("Fire1"))
 			{
-				timestamp = Time.time - timestamp;
+				timestamp = Time.time - timestamp; //used to charge the equipped weapon.
 				megamanController.Fire(timestamp);
 				timestampSet = false;
 				timestamp = 0f;
 				megamanController.StopFire();
+			}
+			else if(Input.GetButtonUp("Pause"))
+			{
+				GameManager.instance.TogglePause();
 			}
 		}
 	}

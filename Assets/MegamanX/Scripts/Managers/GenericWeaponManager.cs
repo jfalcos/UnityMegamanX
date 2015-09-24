@@ -4,7 +4,7 @@ using System.Collections;
 
 public class GenericWeaponManager : MonoBehaviour
 {
-	private Action<GameObject, float> _weapon = null;
+	protected Action<GameObject, float> _weapon = null;
 
 	public Action<GameObject, float> weapon
 	{

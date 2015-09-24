@@ -27,6 +27,8 @@ public class PlatformEventBeeBlader : PlatformEvent
 
 	void OnKill(Hitpoints hitpoints)
 	{
+		IntroStageCamera2DFollow cameraManager = GameObject.FindObjectOfType<IntroStageCamera2DFollow>();
 		myRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+		cameraManager.EnableDefaultMode ();
 	}
 }
