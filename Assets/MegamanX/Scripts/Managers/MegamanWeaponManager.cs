@@ -5,7 +5,7 @@ using System.Collections;
 public class MegamanWeaponManager : GenericWeaponManager
 {
 	private MegamanWeapon[] weapons = null;
-	public int currentActiveWeapon = 0;
+	private int currentActiveWeapon = 0;
 
 	void Awake()
 	{

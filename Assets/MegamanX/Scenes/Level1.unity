@@ -1863,6 +1863,7 @@ GameObject:
   - 224: {fileID: 179363264}
   - 222: {fileID: 179363266}
   - 114: {fileID: 179363265}
+  - 114: {fileID: 179363267}
   m_Layer: 5
   m_Name: Tank 4
   m_TagString: Untagged
@@ -1921,6 +1922,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 179363263}
+--- !u!114 &179363267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179363263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604f9b4d06a511a4d908f26f3d32b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAttribute: {fileID: 1757776308}
+  fillBar: {fileID: 819699768}
+  text: {fileID: 0}
 --- !u!1 &180658674
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,6 +2604,7 @@ GameObject:
   - 224: {fileID: 222363014}
   - 222: {fileID: 222363016}
   - 114: {fileID: 222363015}
+  - 114: {fileID: 222363017}
   m_Layer: 5
   m_Name: Tank 3
   m_TagString: Untagged
@@ -2647,6 +2663,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 222363013}
+--- !u!114 &222363017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222363013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604f9b4d06a511a4d908f26f3d32b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAttribute: {fileID: 1757776307}
+  fillBar: {fileID: 705390159}
+  text: {fileID: 0}
 --- !u!1 &224215435
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,6 +5400,7 @@ GameObject:
   - 224: {fileID: 416187511}
   - 222: {fileID: 416187513}
   - 114: {fileID: 416187512}
+  - 114: {fileID: 416187514}
   m_Layer: 5
   m_Name: Tank
   m_TagString: Untagged
@@ -5428,6 +5459,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416187510}
+--- !u!114 &416187514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604f9b4d06a511a4d908f26f3d32b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAttribute: {fileID: 1757776310}
+  fillBar: {fileID: 776460332}
+  text: {fileID: 0}
 --- !u!1 &416643449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,13 +8277,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557331484}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8275,16 +8320,6 @@ MonoBehaviour:
   - {fileID: 498403303}
   - {fileID: 32719816}
   - {fileID: 878528659}
-  busterWeaponStatus: {fileID: 0}
-  tornadoWeaponStatus: {fileID: 0}
-  torpedoWeaponStatus: {fileID: 0}
-  sparkWeaponStatus: {fileID: 0}
-  stingWeaponStatus: {fileID: 0}
-  cutterWeaponStatus: {fileID: 0}
-  shieldWeaponStatus: {fileID: 0}
-  iceWeaponStatus: {fileID: 0}
-  fireWallWeaponStatus: {fileID: 0}
-  escapeWeaponStatus: {fileID: 0}
 --- !u!1 &564450040
 GameObject:
   m_ObjectHideFlags: 0
@@ -13604,6 +13639,7 @@ GameObject:
   - 222: {fileID: 1044090398}
   - 114: {fileID: 1044090397}
   - 114: {fileID: 1044090396}
+  - 114: {fileID: 1044090399}
   m_Layer: 5
   m_Name: Text lives left
   m_TagString: Untagged
@@ -13680,6 +13716,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1044090394}
+--- !u!114 &1044090399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044090394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604f9b4d06a511a4d908f26f3d32b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAttribute: {fileID: 1757776311}
+  fillBar: {fileID: 0}
+  text: {fileID: 1044090397}
 --- !u!1 &1045608356
 GameObject:
   m_ObjectHideFlags: 0
@@ -16827,6 +16877,7 @@ GameObject:
   - 224: {fileID: 1366690316}
   - 222: {fileID: 1366690318}
   - 114: {fileID: 1366690317}
+  - 114: {fileID: 1366690319}
   m_Layer: 5
   m_Name: Tank 2
   m_TagString: Untagged
@@ -16885,6 +16936,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1366690315}
+--- !u!114 &1366690319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1366690315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604f9b4d06a511a4d908f26f3d32b115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameAttribute: {fileID: 1757776309}
+  fillBar: {fileID: 20031893}
+  text: {fileID: 0}
 --- !u!1 &1368583656
 GameObject:
   m_ObjectHideFlags: 0
@@ -21719,6 +21784,11 @@ GameObject:
   - 114: {fileID: 1757776303}
   - 114: {fileID: 1757776301}
   - 114: {fileID: 1757776298}
+  - 114: {fileID: 1757776310}
+  - 114: {fileID: 1757776309}
+  - 114: {fileID: 1757776307}
+  - 114: {fileID: 1757776308}
+  - 114: {fileID: 1757776311}
   m_Layer: 9
   m_Name: Megaman
   m_TagString: Untagged
@@ -21733,7 +21803,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757776287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.7859993, y: .779999971, z: 0}
+  m_LocalPosition: {x: -36.7000008, y: 1.40799999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224215438}
@@ -21857,7 +21927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b60228c3888d94c827ea06fd0bebc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveWeapon: 0
 --- !u!114 &1757776296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22023,6 +22092,86 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   unlocked: 0
   infiniteAmmo: 0
+--- !u!114 &1757776307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757776287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90076be8536d6540bef1e1cdd9b0e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeName: tank3
+  attributeValue: 1
+  unlocked: 0
+  persistent: 0
+  reset: 0
+--- !u!114 &1757776308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757776287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90076be8536d6540bef1e1cdd9b0e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeName: tank4
+  attributeValue: 1
+  unlocked: 0
+  persistent: 0
+  reset: 0
+--- !u!114 &1757776309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757776287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90076be8536d6540bef1e1cdd9b0e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeName: tank2
+  attributeValue: 1
+  unlocked: 0
+  persistent: 0
+  reset: 0
+--- !u!114 &1757776310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757776287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90076be8536d6540bef1e1cdd9b0e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeName: tank1
+  attributeValue: 4
+  unlocked: 1
+  persistent: 0
+  reset: 0
+--- !u!114 &1757776311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757776287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90076be8536d6540bef1e1cdd9b0e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributeName: lives
+  attributeValue: 3
+  unlocked: 1
+  persistent: 1
+  reset: 0
 --- !u!1 &1776054337
 GameObject:
   m_ObjectHideFlags: 0
@@ -22397,11 +22546,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1853291670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecde7c9161b1e1e4aa4fd2bea7d35781, type: 3}
+  m_Script: {fileID: 11500000, guid: c3654a102ab594840b54c782b20ace84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 1853291673}
   hitpoints: {fileID: 1757776294}
+  fillBar: {fileID: 1853291673}
 --- !u!114 &1853291673
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,14 +2,14 @@ using UnityEngine;
 using System;
 using System.Collections;
 
-[RequireComponent (typeof(GenericWeaponManager))]
+[RequireComponent (typeof(MegamanWeaponManager))]
 [RequireComponent (typeof(Jump2D))]
 [RequireComponent (typeof(WallJump2D))]
 public class MegamanController : MonoBehaviour {
 
 	private Hitpoints hitpoints = null;
 	private MegamanInput playerInput = null;
-	private GenericWeaponManager weaponManager = null;
+	private MegamanWeaponManager weaponManager = null;
 	private Jump2D myJump2D = null;
 	private WallJump2D myWallJump2D = null;
 	private Rigidbody2D _myRigidbody2D = null;
@@ -28,7 +28,7 @@ public class MegamanController : MonoBehaviour {
 		{
 			Debug.LogError(gameObject + " animator is null. Please set the reference.");
 		}
-		weaponManager = GetComponent<GenericWeaponManager> ();
+		weaponManager = GetComponent<MegamanWeaponManager> ();
 		hitpoints = GetComponent<Hitpoints> ();
 		_myRigidbody2D = GetComponent<Rigidbody2D> ();
 		_myCollider2D = GetComponent<Collider2D> ();
