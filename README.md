@@ -7,7 +7,7 @@ Megaman X is a game first released for the SNES console.
 For a detailed description of the original game: 
  [https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)](https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29)
 
-[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity) (Still updating it)
+[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
 ------------------------------------------------------------------------
 
 Summary
@@ -56,17 +56,6 @@ Current Team
 
  - Senior programmer - Javier aka Dunmord
  - Project admin - Javier aka Dunmord
-
-We Need More
-------------
-
- - 2D artists.
- - 2D animators.
- - UI artists.
- - Unity programmers.
- - Level designers.
-
-Think you can help but don't fall in any category? Shoot me an email: javierfalconc@gmail.com
 
 Game References
 ---------------
