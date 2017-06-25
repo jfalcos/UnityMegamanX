@@ -1,5 +1,7 @@
 # UnityMegamanX
 
+Not under active development. First level is playable from start to end.
+
 I started this project because I have fun working on it.
 
 Megaman X is a game first released for the SNES console.
@@ -7,7 +9,7 @@ Megaman X is a game first released for the SNES console.
 For a detailed description of the original game: 
  [https://en.wikipedia.org/wiki/Mega_Man_X_(video_game)](https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29)
 
-[Link - Live View of our Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
+[Link - Live View the project Tasks](https://trello.com/b/id4gzSrT/megamanx-unity)
 ------------------------------------------------------------------------
 
 Summary
@@ -54,7 +56,7 @@ Rewards
 Current Team
 ------------
 
- - Senior programmer - Javier aka Dunmord
+ - Programmer - Javier aka Dunmord
  - Project admin - Javier aka Dunmord
 
 Game References
